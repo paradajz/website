@@ -28,9 +28,9 @@ jobs:
           bundle install
           npm install -g gulp
           npm install
-          bundle exec jekyll build
+          bundle exec gulp prod
           git checkout gh-pages
-          cp -R _site/* .
+          cp -R _site/deploy/* .
           git add .
           git commit --allow-empty -m "update"
           git push https://github.com/paradajz/website gh-pages

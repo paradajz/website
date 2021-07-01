@@ -5,6 +5,7 @@
 
 # Information for compile
 exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "README.md", "vendor"]
+keep_files: ["css", "images"]
 
 #
 # If your website is placed in a separate folder on your server please modify
