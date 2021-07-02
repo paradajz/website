@@ -5,6 +5,7 @@ date: 2020-11-11 11:50
 categories: [News]
 tags: [opendeck, news, boards]
 image: opendeck2.jpg
+comments: true
 ---
 
 This might be the shortest post I've ever written - but fairly important nonetheless. The OpenDeck v2 boards can now be ordered via Tindie! As an reminder, OpenDeck v2 boards bring the the following:

@@ -5,6 +5,7 @@ date: 2020-11-11 11:50
 categories: [News]
 tags: [opendeck, news, boards]
 image: blackpill411.jpg
+comments: true
 ---
 
 Latest OpenDeck firmware now supports two new STM32F4 boards, commonly known as "Black Pill" - the one with STM32F401 and STM32F411 MCUs. These are very powerful boards and their MCU is very similar to the one I'm already using for all my new controllers and also new OpenDeck board.
