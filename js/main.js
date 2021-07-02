@@ -141,7 +141,6 @@
 
       // Scroll Variables
       var $scrollTop = $window.scrollTop();
-      var $windowHeight = $window.height();
 
       /**
        *  Go to Top Button
@@ -155,20 +154,14 @@
       }
 
       // Reveal Item on Scroll
-      function revealItem($container, $item) {
-        if($scrollTop > ($container.offset().top - $windowHeight/1.3 )) {
-
+      function revealItem($item) {
           $item.each(function(i) {
-            setTimeout(function() {
               $item.eq(i).addClass("is-showing");
-            }, 150 * (i+1) );
           });
-
-        }
       }
 
       // Portfolio Reveal Images
-      revealItem($portfolio_grid, $portfolio_grid_item);
+      revealItem($portfolio_grid_item);
 
     });
 
