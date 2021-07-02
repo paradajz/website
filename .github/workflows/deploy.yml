@@ -1,0 +1,36 @@
+name: Deploy
+
+on: [push]
+
+jobs:
+  build:
+    name: Deploy
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Deploy
+        run: |
+          git config --global user.name "web_bot"
+          git config --global user.email "2544094+web_bot@users.noreply.github.com"
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+          export GEM_HOME=$HOME/.gem
+          export GEM_PATH=$HOME/.gem
+          export NVM_DIR="$HOME/.nvm"
+          export PATH="$HOME/.gem/bin:$PATH"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+          nvm install 14.17.2
+          gem install jekyll
+          gem install bundler:1.16.1
+          bundle install
+          npm install -g gulp
+          npm install
+          bundle exec jekyll build
+          git checkout gh-pages
+          cp -R _site/* .
+          git add .
+          git commit --allow-empty -m "update"
+          git push https://github.com/paradajz/website gh-pages
