@@ -124,7 +124,7 @@
     $overlay.on('click', function() {
 
       // Hide Overlay Image
-      $(this).fadeOut(200);
+      $(this).fadeOut(0);
 
       // Remove Image from DOM
       $overlay.children("img").remove();
