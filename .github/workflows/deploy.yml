@@ -24,7 +24,7 @@ jobs:
           [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
           nvm install 14.17.2
           gem install jekyll
-          gem install bundler:1.16.1
+          gem install bundler
           bundle install
           npm install -g gulp
           npm install
