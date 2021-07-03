@@ -32,6 +32,8 @@ smooth-scroll: false
 plugins:
   - jekyll-archives # Sorry, not GitHub pages friendly!
 
+permalink: /:year/:month/:day/:title/
+
 jekyll-archives:
   enabled:
     - categories
