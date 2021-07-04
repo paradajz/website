@@ -7,11 +7,13 @@ layout: page
   <article class="blog-article blog-single-page clearfix">
 
     <!-- Article Header -->
+    {% if page.image != "post_default_header.jpg" %}
     <header class="article-header">
       <div class="img-wrap">
         <img src="{{ site.baseurl }}/images/blog/{{ page.image }}" alt="Article Blog Image">
       </div>
     </header>
+    {% endif %}
 
     <!-- Article Content -->
     <article class="markdown-body">
