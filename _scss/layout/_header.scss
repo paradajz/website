@@ -70,6 +70,10 @@ header.site-header {
         display: block;
         float: right;
 
+        ol, ul {
+          list-style: none;
+        }
+
         ul {
           li {
             float: left;

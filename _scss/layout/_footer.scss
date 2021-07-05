@@ -31,6 +31,11 @@ footer.site-footer {
 
     // Social Media Icons
     .social-icons {
+
+      ol, ul {
+        list-style: none;
+      }
+
       a  {
         color: $global-text;
 
