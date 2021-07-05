@@ -45,22 +45,17 @@
   margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
+  background-color: black;
+  border-color: white;
 
   &.button-focus {
-    border-color: $primary;
     background-color: $primary;
-  }
-
-  &.button-blue {
-    color: $primary;
-    border-color: $primary;
   }
 
   &:hover,
   &:active {
-    color: $white;
-    border-color: lighten($primary, 20%);
-    background-color: lighten($primary, 20%);
+    color: $primary;
+    background-color: white;
   }
 
 }
@@ -71,8 +66,15 @@ button,
 .button-cta {
 
   &.button-block {
+    background-color: $primary;
     display: block;
     width: 100%;
+
+    &:hover,
+    &:active {
+      color: $primary;
+      background-color: white;
+    }
   }
 
 }
