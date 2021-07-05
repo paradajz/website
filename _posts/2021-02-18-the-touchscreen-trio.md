@@ -24,7 +24,7 @@ As is tradition with my controllers, this one also has reference to teas – the
 As far as Nextion support is concerned, OpenDeck now supports CDC mode, or more simply, the board can now act as USB to serial device, if you choose to reboot into it from Web UI. This allows you to upload your design to the screen from Nextion GUI without detaching screen from OpenDeck board and then plugging it into FTDI or some other converter. This feature is available on all STM32 based boards.
 
 <div class="videoWrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TPc6ETIsVTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TPc6ETIsVTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Rooibos
@@ -41,7 +41,7 @@ I seriously don’t know what I was thinking when I was designing Cardamom. The 
 Rooibos is a red bush native to South Africa. Leaves from it are used to make one of my favorite teas with the same name. Perfect for any time of the day since it doesn’t contain theine, so it won’t keep you awake, unlike black and green (and anything made from Camellia Sinensis, really) teas do.
 
 <div class="videoWrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B4JwPd6Kib4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/B4JwPd6Kib4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Bergamot
@@ -59,5 +59,5 @@ Having built Rooibos I’ve filled all my controller needs, however, I still had
 There is one more thing I’ve added to OpenDeck firmware in latest release – the ability to define custom regions on screen to serve as analog components. Defining is done in Web Ui, just like everything else. This could enable some really cool use-cases. Sadly, all I could think of and show off was controlling two effects at the same time in Traktor DJ. Here’s to hoping I get to see more use cases of this!
 
 <div class="videoWrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/K29GrrtvoAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/K29GrrtvoAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

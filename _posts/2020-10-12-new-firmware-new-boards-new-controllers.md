@@ -54,7 +54,7 @@ The stunning red wood is african Padouk. The controller is also based on STM32F4
 I've also recorded a video of me mixing on this controller.
 
 <div class="videoWrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TPc6ETIsVTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TPc6ETIsVTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### SysEx programmer

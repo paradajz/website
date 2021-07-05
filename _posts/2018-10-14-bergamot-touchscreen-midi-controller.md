@@ -73,5 +73,5 @@ Bergamot is based on [latest version of OpenDeck](https://github.com/paradajz/Op
 Here's demo video of Bergamot controller in action! I'm really happy with - in fact, it could be my first controller on which I haven't felt the urge to change something as soon as I've finished it. That's probably a very good sign. There's also a [longer mix you can check out on my Mixcloud](https://www.mixcloud.com/enigmatik/impressions/) - made using Bergamot, of course.
 
 <div class="videoWrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/O12u3A11dXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O12u3A11dXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

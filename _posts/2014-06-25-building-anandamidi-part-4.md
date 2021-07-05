@@ -51,4 +51,4 @@ Really simple schematic and works just like the NAND gate solution. Finally, the
 
 Since everything works, here's a video with Anandamidi, and my first controller, Tannin. Note that this was recorded before the case was painted. Enjoy.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B0tTqctuLCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/B0tTqctuLCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
