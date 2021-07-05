@@ -127,27 +127,9 @@ section.prices-section {
         padding: 40px 22px;
         border-bottom: 1px solid $simple-gray;
 
-        h4.feature-title {
-          font-weight: bold;
-          color: $secondary;
-          font-size: 1rem;
-
-          .check {
-            color: $green;
-            font-size: 1.1em;
-            margin-right: 4px;
-          }
-        }
-
         hr.separator {
           margin: 20px auto;
         }
-
-        p.feature-content {
-          font-size: 0.75rem;
-          margin: 20px 0;
-        }
-
       }
 
       // Plan Action
