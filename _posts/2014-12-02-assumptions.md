@@ -88,7 +88,9 @@ Now, analog value is in the range 0-255, and when reading the value, we simply r
 
 Together with doing matrix switching inside timer interrupt, code now performs much faster, and there are no more problems with sending lots of data to controller. You can check out VU-meter in action here:
 
+<div class="videoWrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0UBKplDQOXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 So, in short:
 

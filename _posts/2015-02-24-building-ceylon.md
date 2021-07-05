@@ -180,7 +180,9 @@ In order to solve this, I've placed Schottky diode (to minimize voltage drop) be
 
 So, to conclude this post, here's a short video of Ceylon in action, together with Tannin.
 
+<div class="videoWrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ObLED808kKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 And also some higher quality pictures of Ceylon.
 

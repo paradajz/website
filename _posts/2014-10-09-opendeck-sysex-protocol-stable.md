@@ -121,4 +121,6 @@ At the moment, I am adding support for encoders in OpenDeck software. Due to the
 
 I recorded a video to show-off all the mentioned features:
 
+<div class="videoWrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3T1-x4B77nw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

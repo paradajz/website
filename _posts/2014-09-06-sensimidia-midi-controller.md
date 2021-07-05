@@ -36,4 +36,6 @@ And standard USB plate for the cable.
 
 All in all, very fun project again, even though it's not been really that much different from Anandamidi. Here's a quick video I've taken demonstrating some of controller functionality (really sorry for the lack of good camera and tripod):
 
+<div class="videoWrapper">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1DqVZFMmq94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
