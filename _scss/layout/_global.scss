@@ -72,11 +72,16 @@ em, i {
 // Heading
 h1 {
   font-size: 4.75rem;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.6);
 }
 
 h2 {
   font-size: 2.5rem;
+}
+
+h2cover {
+  font-size: 2.5rem;
+  background-color: rgba(0,0,0,0.6);
 }
 
 h3 {
