@@ -33,4 +33,4 @@ jobs:
           cp -R _site/deploy/* .
           git add .
           git commit --allow-empty -m "update"
-          git push https://github.com/paradajz/website gh-pages
+          git push https://github.com/shanteacontrols/website gh-pages

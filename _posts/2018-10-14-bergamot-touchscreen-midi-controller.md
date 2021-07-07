@@ -66,7 +66,7 @@ Layout was drawn using CorelDraw and exported into 640x480 images directly to th
 
 ## Software
 
-Bergamot is based on [latest version of OpenDeck](https://github.com/paradajz/OpenDeck/releases/tag/v3.0.0) which has initial support for touchscreens. I haven't made it official yet since the plan is to support [Nextion Line from ITead](https://nextion.itead.cc). This specific touchscreen I've used on Bergamot is an industrial screen I was already familiar with, but it's not something available for consumers in larger quantities.
+Bergamot is based on [latest version of OpenDeck](https://github.com/shanteacontrols/OpenDeck/releases/tag/v3.0.0) which has initial support for touchscreens. I haven't made it official yet since the plan is to support [Nextion Line from ITead](https://nextion.itead.cc). This specific touchscreen I've used on Bergamot is an industrial screen I was already familiar with, but it's not something available for consumers in larger quantities.
 
 ## Demo
 

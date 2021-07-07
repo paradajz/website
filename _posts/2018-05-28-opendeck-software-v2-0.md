@@ -10,7 +10,7 @@ image: "post_default_header.jpg"
 comments: true
 ---
 
-OpenDeck software has finally reached a [new milestone: v2.0](https://github.com/paradajz/OpenDeck/releases/tag/v2.0.1), so in this post, I'll write about new features in it.
+OpenDeck software has finally reached a [new milestone: v2.0](https://github.com/shanteacontrols/OpenDeck/releases/tag/v2.0.1), so in this post, I'll write about new features in it.
 
 ## MIDI channels
 

@@ -37,7 +37,7 @@ The board also contains DIN MIDI in and out ports. MIDI in port can be used in t
 
 ## Schematic
 
-Complete schematic and PCB files can be found on [this](https://github.com/paradajz/OpenDeck/tree/master/schematics) link.
+Complete schematic and PCB files can be found on [this](https://github.com/shanteacontrols/OpenDeck/tree/master/schematics) link.
 
 ### Power
 

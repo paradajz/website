@@ -34,4 +34,4 @@ Now, regarding the actual building of DubFocus, here are the rules:
 3. Price as already mentioned is 1200$, shipping not included.
 4. Build time: in about 3-4 months, not before.
 
-If I get 4 pre-orders for this, I'll build them. Otherwise, firmware and electronics are available in [OpenDeck repository on GitHub](https://github.com/paradajz/OpenDeck).
+If I get 4 pre-orders for this, I'll build them. Otherwise, firmware and electronics are available in [OpenDeck repository on GitHub](https://github.com/shanteacontrols/OpenDeck).

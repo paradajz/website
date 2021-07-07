@@ -17,7 +17,7 @@ image: "540b3-20180713_080821.jpg"
 comments: true
 ---
 
-Last time I've built a custom MIDI controller for someone was [quite a while ago](https://shanteacontrols.wpcomstaging.com/2014/09/06/sensimidia-midi-controller/). Actually, I've been so focused on [OpenDeck](https://github.com/paradajz/OpenDeck) in the last few years I barely even mention to anyone that I do actually build entire controllers as well - and why bother? Most of the conversations about that look almost exactly like this:
+Last time I've built a custom MIDI controller for someone was [quite a while ago](https://shanteacontrols.wpcomstaging.com/2014/09/06/sensimidia-midi-controller/). Actually, I've been so focused on [OpenDeck](https://github.com/shanteacontrols/OpenDeck) in the last few years I barely even mention to anyone that I do actually build entire controllers as well - and why bother? Most of the conversations about that look almost exactly like this:
 
 > Someone: Hi! So you can build a custom MIDI controllers?
 > 

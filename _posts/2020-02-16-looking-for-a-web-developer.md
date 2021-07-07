@@ -22,4 +22,4 @@ Unfortunately, the UI has some drawbacks. Since the time it was introduced, seve
 4. Core UI code is a mess. This has happened because the original source code was lost, and the version that was uploaded to the server was run through obsfucator.
 5. I am not a web developer so I can't fix any of this (UI code was written by another developer).
 
-If you think you have what it takes to build a new version of the configurator, let me know! Of course, I am not expecting anyone to do this for free (might be obvious, but doesn't hurt to mention it). The current source code is available in [OpenDeck repository on GitHub](https://github.com/paradajz/OpenDeck/tree/master/webui).
+If you think you have what it takes to build a new version of the configurator, let me know! Of course, I am not expecting anyone to do this for free (might be obvious, but doesn't hurt to mention it). The current source code is available in [OpenDeck repository on GitHub](https://github.com/shanteacontrols/OpenDeck/tree/master/webui).

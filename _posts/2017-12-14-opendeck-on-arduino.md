@@ -51,7 +51,7 @@ To get OpenDeck on Arduino, there are three options:
 
 1. Buy pre-configured Arduino board directly from me. This saves you a lot of hassle with compiling and uploading the code to Arduino (you will also need AVR programmer such as [USBasp](http://www.fischl.de/usbasp/) or [AVRISP mkII](http://www.atmel.com/tools/avrispmkii.aspx)). The pricing for this option is listed on my new [website.](https://shanteacontrols.wpcomstaging.com/)
 2. Buy pre-compiled firmware and upload it to Arduino yourself. If you already happen to have Arduino boards laying around together with AVR programmer, you can buy pre-compiled firmware from me for 20€.
-3. Download the source code from [GitHub](https://github.com/paradajz/OpenDeck), compile it and upload to Arduino yourself. This is for brave souls only - you will need Linux-based environment to compile the code, as well as familiarity with command-line tools.
+3. Download the source code from [GitHub](https://github.com/shanteacontrols/OpenDeck), compile it and upload to Arduino yourself. This is for brave souls only - you will need Linux-based environment to compile the code, as well as familiarity with command-line tools.
 
 ## Future
 
@@ -59,4 +59,4 @@ Based on interest, I plan to make OpenDeck available on more powerful ARM-based 
 
 ## EDIT:
 
-As of OpenDeck v3.0.0 pre-compiled Arduino binaries are part of the [release on GitHub](https://github.com/paradajz/OpenDeck/releases). Also, pre-configured Arduino boards are now available on [Tindie](https://www.tindie.com/stores/paradajz/).
+As of OpenDeck v3.0.0 pre-compiled Arduino binaries are part of the [release on GitHub](https://github.com/shanteacontrols/OpenDeck/releases). Also, pre-configured Arduino boards are now available on [Tindie](https://www.tindie.com/stores/paradajz/).

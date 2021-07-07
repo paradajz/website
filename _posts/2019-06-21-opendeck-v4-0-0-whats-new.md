@@ -27,7 +27,7 @@ Since v3.1.1, the official OpenDeck repository now contains merged bootloader an
 
 ## WebUI
 
-WebUI can now run locally, without Google Chrome or even Internet connection. Many people have been asking about this and now it's possible. Just download the version you need for your OS from the [GitHub releases](https://github.com/paradajz/OpenDeck/releases) page. I have also added WebUI retroactively for every version of OpenDeck since the first version which had WebUI in repository (v2.0.1)
+WebUI can now run locally, without Google Chrome or even Internet connection. Many people have been asking about this and now it's possible. Just download the version you need for your OS from the [GitHub releases](https://github.com/shanteacontrols/OpenDeck/releases) page. I have also added WebUI retroactively for every version of OpenDeck since the first version which had WebUI in repository (v2.0.1)
 
 ## v4.0.0
 
@@ -39,4 +39,4 @@ I'm happy to say that the new batch of OpenDeck boards has finally arrived and y
 
 ## Bonus
 
-The gerber files needed to produce the OpenDeck boards are now [available in repository](https://github.com/paradajz/OpenDeck/tree/master/bin/sch/opendeck), which means you can download the BOM and gerbers and send them to a PCB house if you don't want to buy them from me (although, I would be grateful if you did).
+The gerber files needed to produce the OpenDeck boards are now [available in repository](https://github.com/shanteacontrols/OpenDeck/tree/master/bin/sch/opendeck), which means you can download the BOM and gerbers and send them to a PCB house if you don't want to buy them from me (although, I would be grateful if you did).

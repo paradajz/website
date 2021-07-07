@@ -25,7 +25,7 @@ There are now 16 potentiometers on a single board, compared to the two last time
 
 There is now also a single holder plate for both the pots and buttons/LEDs. I am so pleased with this, in fact, that I've completely replaced all the electronics inside of the original controller since I don't want to live in a fear of something breaking in a crucial moment.
 
-Of course, as always, all controllers run the latest and greatest [OpenDeck firmware](https://github.com/paradajz/OpenDeck).
+Of course, as always, all controllers run the latest and greatest [OpenDeck firmware](https://github.com/shanteacontrols/OpenDeck).
 
 Here are some pictures of completed controllers.
 

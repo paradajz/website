@@ -21,7 +21,7 @@ Before I start talking about Ownduino, I want to clarify what Arduino really is.
 
 ## Ownduino
 
-Ownduino is a lightweight library which contains only few of most used functions from Arduino, like Serial.begin(), Serial.write(), millis() and a couple more functions. You can check out rest of the features on [Ownduino GitHub](https://github.com/paradajz/Ownduino). Ownduino also gives user a choice to completely disable ADC, timer or Serial buffer. digitalRead, digitalWrite or String class are examples of what you will not find in Ownduino.
+Ownduino is a lightweight library which contains only few of most used functions from Arduino, like Serial.begin(), Serial.write(), millis() and a couple more functions. You can check out rest of the features on [Ownduino GitHub](https://github.com/shanteacontrols/Ownduino). Ownduino also gives user a choice to completely disable ADC, timer or Serial buffer. digitalRead, digitalWrite or String class are examples of what you will not find in Ownduino.
 
 ## MIDI library
 
@@ -41,7 +41,7 @@ Recently, I've discovered that I can send real time MIDI data from Traktor Pro t
 
 ### Time interrupts
 
-Thing I learned from this is that matrix switching should always be done inside a interrupt routine. It's the only way of ensuring correct switching without any delays. [Placing matrix switching inside interrupt routine](https://github.com/paradajz/OpenDeck/blob/master/lib/OpenDeck/HardwareControl.cpp#L324) was first thing I did to optimize the code. Second thing again boils down to knowing your code, something Arduino hides away from you.
+Thing I learned from this is that matrix switching should always be done inside a interrupt routine. It's the only way of ensuring correct switching without any delays. [Placing matrix switching inside interrupt routine](https://github.com/shanteacontrols/OpenDeck/blob/master/lib/OpenDeck/HardwareControl.cpp#L324) was first thing I did to optimize the code. Second thing again boils down to knowing your code, something Arduino hides away from you.
 
 ### ADC configuration
 

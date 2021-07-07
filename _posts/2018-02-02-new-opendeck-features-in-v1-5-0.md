@@ -12,7 +12,7 @@ image: "post_default_header.jpg"
 comments: true
 ---
 
-Last time I talked about features in OpenDeck was, well, long time ago. I have released OpenDeck [firmware v1.5.0](https://github.com/paradajz/OpenDeck/releases/tag/v1.5.0) so it's time to fix this!
+Last time I talked about features in OpenDeck was, well, long time ago. I have released OpenDeck [firmware v1.5.0](https://github.com/shanteacontrols/OpenDeck/releases/tag/v1.5.0) so it's time to fix this!
 
 ## NRPN
 
@@ -61,7 +61,7 @@ I have added a new parameter to LED configuration - activation velocity.
 
 ![]({{ site.baseurl }}/images/blog/05206-webui_leds_act_vel.png)
 
-This option is used only for single-color LEDs and you can define which velocity will turn the LED on. For RGB LEDs, [velocity-table](https://github.com/paradajz/OpenDeck/wiki/LED-control) is used as before.
+This option is used only for single-color LEDs and you can define which velocity will turn the LED on. For RGB LEDs, [velocity-table](https://github.com/shanteacontrols/OpenDeck/wiki/LED-control) is used as before.
 
 ## Version info
 

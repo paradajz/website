@@ -29,7 +29,7 @@ Wish can have three meanings:
 
 **2) SET:** Store new data in controller. Code 0x01.
 
-**3) RESTORE:** Restores default configuration for specified data, or restores every setting to factory default. Defaults can be checked in code [here](https://github.com/paradajz/OpenDeck/blob/master/lib/OpenDeck/EEPROM.h#L62). Code is 0x02.
+**3) RESTORE:** Restores default configuration for specified data, or restores every setting to factory default. Defaults can be checked in code [here](https://github.com/shanteacontrols/OpenDeck/blob/master/lib/OpenDeck/EEPROM.h#L62). Code is 0x02.
 
 **SINGLE/ALL**
 
@@ -41,7 +41,7 @@ There are several message types, and their codes are all based on ASCII table, j
 
 **1) MIDI Channel**: 0x4D.
 
-There are 5 channels in total (Button press, long button press, CC channel for pots, CC for encoders and input channel). These are their parameter codes (copied directly from [here](https://github.com/paradajz/OpenDeck/blob/master/lib/OpenDeck/SysEx.h)):
+There are 5 channels in total (Button press, long button press, CC channel for pots, CC for encoders and input channel). These are their parameter codes (copied directly from [here](https://github.com/shanteacontrols/OpenDeck/blob/master/lib/OpenDeck/SysEx.h)):
 
 ```
  #define SYS\_EX\_MC\_BUTTON\_NOTE 0x00

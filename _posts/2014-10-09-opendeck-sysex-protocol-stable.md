@@ -111,7 +111,7 @@ Changing order of LEDs during start-up routine:
 
 ## More examples
 
-There are many more examples listed on [OpenDeck GitHub](https://github.com/paradajz/OpenDeck/tree/master/examples) repository, so feel free to check them out.
+There are many more examples listed on [OpenDeck GitHub](https://github.com/shanteacontrols/OpenDeck/tree/master/examples) repository, so feel free to check them out.
 
 ## Planned features
 

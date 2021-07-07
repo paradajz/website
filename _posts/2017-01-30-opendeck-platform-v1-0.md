@@ -16,9 +16,9 @@ image: "screenshot870.png"
 comments: true
 ---
 
-You'd be forgiven for thinking that OpenDeck project is dead, as well as this blog - after all, it's been more than a year since the last update. While it's true that in the past year I haven't had much time to work on the platform, [last couple of months](https://github.com/paradajz/OpenDeck/graphs/contributors?from=2016-12-04&to=2017-01-29&type=c) have been full of development again, and this post is an announcement of OpenDeck v1.0 - stable version of firmware, hardware and Web configuration utility. This time, I'll concentrate on user-facing changes only - low-level changes are going to be discussed in future posts.
+You'd be forgiven for thinking that OpenDeck project is dead, as well as this blog - after all, it's been more than a year since the last update. While it's true that in the past year I haven't had much time to work on the platform, [last couple of months](https://github.com/shanteacontrols/OpenDeck/graphs/contributors?from=2016-12-04&to=2017-01-29&type=c) have been full of development again, and this post is an announcement of OpenDeck v1.0 - stable version of firmware, hardware and Web configuration utility. This time, I'll concentrate on user-facing changes only - low-level changes are going to be discussed in future posts.
 
-In case this is your first visit here, I'll copy OpenDeck info straight from [GitHub](https://github.com/paradajz/OpenDeck):
+In case this is your first visit here, I'll copy OpenDeck info straight from [GitHub](https://github.com/shanteacontrols/OpenDeck):
 
 _OpenDeck is a platform suited both for prototyping and developing custom MIDI controllers compatible with any MIDI software on any OS. Main part of the platform is board on which various components used to build a MIDI controller can be connected. The board supports the following components:_
 
@@ -40,7 +40,7 @@ On MIDI side of things, I've replaced [6N138](http://www.vishay.com/doc?83605) o
 
 ## Configuration utility
 
-This is the big news. **Really big**. Ever since Google [announced](https://blog.chromium.org/2015/04/chrome-43-beta-web-midi-and-upgrading.html) the support for Web MIDI in Google Chrome, I wanted OpenDeck configuration utility to run inside it. Building one app which runs on any platform is definitely better than coding three different apps for Mac, Linux and Windows. Since my knowledge of web is pretty miserable, I've hired two guys ([programmer](https://www.facebook.com/alem.biscan) and [designer](https://hr.linkedin.com/in/marko-meic-sidic-8775aa124)) to design and build configuration utility based on my specs. I don't know much about low-level details of utility, but I do know it involves some magic words such as "Angular" and "Javascript". Concept of utility is actually pretty simple - it has sidebar containing configuration blocks available on OpenDeck - MIDI, buttons, LEDs, encoders and analog stuff. It also has activity log, displaying all incoming and outgoing messages, info window and backup and restore functionality. All configuration is done using custom SysEx protocol explained [here](https://github.com/paradajz/OpenDeck/wiki/SysEx-Configuration). Below are the screenshots.
+This is the big news. **Really big**. Ever since Google [announced](https://blog.chromium.org/2015/04/chrome-43-beta-web-midi-and-upgrading.html) the support for Web MIDI in Google Chrome, I wanted OpenDeck configuration utility to run inside it. Building one app which runs on any platform is definitely better than coding three different apps for Mac, Linux and Windows. Since my knowledge of web is pretty miserable, I've hired two guys ([programmer](https://www.facebook.com/alem.biscan) and [designer](https://hr.linkedin.com/in/marko-meic-sidic-8775aa124)) to design and build configuration utility based on my specs. I don't know much about low-level details of utility, but I do know it involves some magic words such as "Angular" and "Javascript". Concept of utility is actually pretty simple - it has sidebar containing configuration blocks available on OpenDeck - MIDI, buttons, LEDs, encoders and analog stuff. It also has activity log, displaying all incoming and outgoing messages, info window and backup and restore functionality. All configuration is done using custom SysEx protocol explained [here](https://github.com/shanteacontrols/OpenDeck/wiki/SysEx-Configuration). Below are the screenshots.
 
 ![]({{ site.baseurl }}/images/blog/screenshot859.png)
 
@@ -48,7 +48,7 @@ On MIDI screen, user can configure couple of settings related to MIDI protocol i
 
 ![]({{ site.baseurl }}/images/blog/screenshot860.png)
 
-Button window lists all buttons which are possible to configure on board. Even though board has 64 inputs for buttons, 32 analog inputs can be converted to digital inputs (that is, buttons), resulting in total of 96 possible buttons. One of the cool features of utility is that pressing the button connected to board will automatically blink the correct button ID in utility, so that you don't have to waste time finding it. You can read about how is that accomplished [here](https://github.com/paradajz/OpenDeck/wiki/SysEx-Configuration#component-info-messages). Another cool thing is that number of buttons (or anything else) isn't hardcoded, but generated by the utility. Before the configuration section is rendered, a [request](https://github.com/paradajz/OpenDeck/wiki/SysEx-Configuration#number-of-supported-components) is sent to board asking it how many buttons are possible to configure, so utility is future-proof if I'm ever going to increase or decrease number of buttons, encoders etc.
+Button window lists all buttons which are possible to configure on board. Even though board has 64 inputs for buttons, 32 analog inputs can be converted to digital inputs (that is, buttons), resulting in total of 96 possible buttons. One of the cool features of utility is that pressing the button connected to board will automatically blink the correct button ID in utility, so that you don't have to waste time finding it. You can read about how is that accomplished [here](https://github.com/shanteacontrols/OpenDeck/wiki/SysEx-Configuration#component-info-messages). Another cool thing is that number of buttons (or anything else) isn't hardcoded, but generated by the utility. Before the configuration section is rendered, a [request](https://github.com/shanteacontrols/OpenDeck/wiki/SysEx-Configuration#number-of-supported-components) is sent to board asking it how many buttons are possible to configure, so utility is future-proof if I'm ever going to increase or decrease number of buttons, encoders etc.
 
 ![]({{ site.baseurl }}/images/blog/screenshot861.png)
 
@@ -60,7 +60,7 @@ LED configuration lists some global parameters applied to all LEDs, as well as l
 
 ![]({{ site.baseurl }}/images/blog/screenshot863.png)
 
-Any LED can have assigned any activation note (0-127). When local control is disabled, LED is controlled with received MIDI note and velocity. You can read more about LED control [here](https://github.com/paradajz/OpenDeck/wiki/LED-control). When enabled, any button which sends note same as activation note will control the LED instead. LED can also be configured as RGB LED. Last two options are used for testing LED states (when RGB LED is enabled, different colors can be picked from state test field).
+Any LED can have assigned any activation note (0-127). When local control is disabled, LED is controlled with received MIDI note and velocity. You can read more about LED control [here](https://github.com/shanteacontrols/OpenDeck/wiki/LED-control). When enabled, any button which sends note same as activation note will control the LED instead. LED can also be configured as RGB LED. Last two options are used for testing LED states (when RGB LED is enabled, different colors can be picked from state test field).
 
 ![]({{ site.baseurl }}/images/blog/screenshot864.png)
 
@@ -68,7 +68,7 @@ Encoder section displays total of 32 encoders. 64 digital inputs available on Op
 
 ![]({{ site.baseurl }}/images/blog/screenshot868.png)
 
-Encoders need to be specifically enabled in order to function. Encoders send CC messages, and any CC number can be assigned to specific encoder (0-127). Two [encoding modes](https://github.com/paradajz/OpenDeck/wiki/SysEx-Configuration#encoding-mode) are available: 7Fh01h and 3Fh41h, which can also be inverted.
+Encoders need to be specifically enabled in order to function. Encoders send CC messages, and any CC number can be assigned to specific encoder (0-127). Two [encoding modes](https://github.com/shanteacontrols/OpenDeck/wiki/SysEx-Configuration#encoding-mode) are available: 7Fh01h and 3Fh41h, which can also be inverted.
 
 ![]({{ site.baseurl }}/images/blog/screenshot865.png)
 
@@ -80,17 +80,17 @@ Analog components need to be enabled in order to function. This is to avoid junk
 
 ![]({{ site.baseurl }}/images/blog/screenshot867.png)
 
-Info window contains some basic info about the board (firmware and hardware version). Checking for updates is done by comparing last [tag on OpenDeck GitHub](https://github.com/paradajz/OpenDeck/releases) to firmware version currently present on board, which is a very cool feature. Other options include rebooting the board, factory reset and bootloader mode, which is used for [firmware update](https://github.com/paradajz/OpenDeck/wiki/Firmware-update) process.
+Info window contains some basic info about the board (firmware and hardware version). Checking for updates is done by comparing last [tag on OpenDeck GitHub](https://github.com/shanteacontrols/OpenDeck/releases) to firmware version currently present on board, which is a very cool feature. Other options include rebooting the board, factory reset and bootloader mode, which is used for [firmware update](https://github.com/shanteacontrols/OpenDeck/wiki/Firmware-update) process.
 
 I can say I'm very proud of configuration utility, as it's one of the first WebMIDI apps used for configuration using SysEx messages! Building a MIDI controller sure does seem easy now. I haven't had the chance of testing it on Linux distros yet, but it works (mostly) flawlessly on Windows and Mac OS X - mostly because of WebMIDI still being finicky. For instance, MIDI connection sometimes won't be detected, and leaving the utility idle for some time can sometimes lead to issues. On top of that, Google also requires [SSL connection](https://bugs.chromium.org/p/chromium/issues/detail?id=470170) when using SysEx messages via WebMIDI which is a real PITA. Really Google? I hope those issues will be resolved one day, but for now, I can live with it. I also hope other Web browsers will include support for WebMIDI soon - not everyone likes Chrome. There **is** some activity with WebMIDI implementation in [Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=836897), though.
 
 ## Documentation
 
-Undocumented code is worthless. I've written extensive wiki on [OpenDeck GitHub](https://github.com/paradajz/OpenDeck), so you can check entire documentation [here](https://github.com/paradajz/OpenDeck/wiki) \- everything from schematics, connection diagrams, SysEx protocol, firmware update process etc.
+Undocumented code is worthless. I've written extensive wiki on [OpenDeck GitHub](https://github.com/shanteacontrols/OpenDeck), so you can check entire documentation [here](https://github.com/shanteacontrols/OpenDeck/wiki) \- everything from schematics, connection diagrams, SysEx protocol, firmware update process etc.
 
 ## Open Source
 
-Most of OpenDeck really is open. I've done my best to write clean and efficient code and document entire project. Exceptions to this are board design (gerber files) and Web utility. Those two things are truly custom solutions, and OpenDeck is a platform open enough to be used without them, since my GitHub contains complete [schematics](https://github.com/paradajz/OpenDeck/blob/master/bin/sch/OpenDeck-r1.1.0.pdf) and full documentation on [SysEx protocol](https://github.com/paradajz/OpenDeck/wiki/SysEx-Configuration). Maybe someone will build a better board and better configuration app - who knows? In the meantime, my board and utility really are the only incentives for someone to actually spend any money on OpenDeck. At the end of the day, whenever someone buys it, it will make me invest more time into platform, which translates to less bugs, more features and possibly new products. So far, development of platform has been pretty slow. Supporting it will definitely change that.
+Most of OpenDeck really is open. I've done my best to write clean and efficient code and document entire project. Exceptions to this are board design (gerber files) and Web utility. Those two things are truly custom solutions, and OpenDeck is a platform open enough to be used without them, since my GitHub contains complete [schematics](https://github.com/shanteacontrols/OpenDeck/blob/master/bin/sch/OpenDeck-r1.1.0.pdf) and full documentation on [SysEx protocol](https://github.com/shanteacontrols/OpenDeck/wiki/SysEx-Configuration). Maybe someone will build a better board and better configuration app - who knows? In the meantime, my board and utility really are the only incentives for someone to actually spend any money on OpenDeck. At the end of the day, whenever someone buys it, it will make me invest more time into platform, which translates to less bugs, more features and possibly new products. So far, development of platform has been pretty slow. Supporting it will definitely change that.
 
 ## Availability
 
@@ -102,6 +102,6 @@ Now that board, firmware and configuration utility are ready, you can contact me
 4. Access to online web utility
 5. One year guarantee
 
-Bugs and feature requests can always be reported [here](https://github.com/paradajz/OpenDeck/issues).
+Bugs and feature requests can always be reported [here](https://github.com/shanteacontrols/OpenDeck/issues).
 
 Thanks for reading!
