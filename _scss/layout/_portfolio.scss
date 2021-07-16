@@ -6,6 +6,10 @@
  *
  **/
 
+ [data-categories].hidden{
+  display: none;
+}
+
 section.portfolio-section {
 
   // Filter Menu
@@ -29,6 +33,7 @@ section.portfolio-section {
           display: inline-block;
           position: relative;
           padding: 15px;
+          text-transform: uppercase;
           cursor: pointer;
           color: $secondary;
           transition: all $transition-links $transition-links-type;

@@ -18,11 +18,27 @@
 
     </div>
 
+    <div class="row filter-menu-wrapper">
+      <div class="col-md-8 col-md-push-2">
+        <div class="filter-menu">
+          <ul>
+            <li data-filter="all" class="current">All</li>
+            {% for item in site.portfolio-categories %}
+              <li data-filter="{{ item }}">{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div id="gallery-container">
 
       {% for item in site.portfolio %}
 
-        <a class="item" data-src="{{ site.baseurl }}/images/portfolio/{{ item.image }}" data-sub-html="<h2>{{ item.title }}</h2> <h3>Category: {{ item.categories | first }}</h3>">
+        <a  class="item tst" 
+            data-src="{{ site.baseurl }}/images/portfolio/{{ item.image }}" 
+            data-categories="{% for category in item.categories %} {{ category }} {% endfor %}" 
+            data-sub-html="<h2>{{ item.title }}</h2> <h3>Category: {{ item.categories | first }}</h3>">
           <img style="padding: 15px;" class="col-md-4 col-sm-6" src="{{ site.baseurl }}/images/portfolio/{{ item.image }}"/>
         </a>
 
@@ -32,3 +48,39 @@
 
   </div>
 </section>
+
+<script>
+  (function(){
+    let filters = document.querySelectorAll('[data-filter]');
+    let items = document.querySelectorAll('[data-categories]');
+    Array.prototype.slice.call(filters).map( filter => {
+      filter.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        Array.prototype.slice.call(filters).map( filter => {
+          filter.classList.remove('current');
+        });
+        e.target.classList.add('current');
+
+        let filterQuery = e.target.dataset['filter'];
+        // show all
+        if( filterQuery == "all" ){
+          Array.prototype.slice.call(items).map( item => {
+            item.classList.remove('hidden');
+          });
+        }else{
+          Array.prototype.slice.call(items).map( item => {
+            // show
+            if( item.dataset.categories.indexOf(filterQuery) > -1 ){
+              item.classList.remove('hidden');
+            }
+            // hide
+            else{
+              item.classList.add('hidden');
+            }
+          })
+        }
+      })
+    });
+  }())
+</script>
