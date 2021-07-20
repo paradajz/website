@@ -68,71 +68,6 @@
     });
 
     /**
-     *  Portfolio
-     **/
-    var $filter_menu_item = $('.filter-menu ul li');
-    var $portfolio_grid = $('.portfolio-grid');
-    var $portfolio_grid_item = $portfolio_grid.children(".item");
-    var $overlay = $portfolio_grid.children("#overlay");
-    var $img = '<img alt="Portfolio Overlay Image" />';
-    var $data_filters = null;
-
-    // Filter Menu
-    $filter_menu_item.on('click', function() {
-
-      // Filter Menu
-      $filter_menu_item.removeClass('current');
-      $(this).addClass('current');
-
-      // Collecting Data Filters
-      $data_filters = $(this).data('filter');
-
-      // Hide All Portfolio Items
-      if($data_filters == 'all') {
-        $portfolio_grid_item.addClass('visible');
-      }
-      else { // Show Portfolio Items from filter
-        $portfolio_grid_item.removeClass('visible');
-        $($data_filters).addClass('visible');
-      }
-
-    });
-
-    // Show Image - Lightbox
-    $portfolio_grid_item.find(".item-expand").on('click', function(e) {
-
-      // Prevent Default Link Event
-      e.preventDefault();
-
-      // Get Image Link
-      var $src = $(this).attr("href");
-
-      // Create Image on the DOM
-      $overlay.append($img);
-
-      // Show Overlay Image
-      $overlay.fadeIn(200).children("img").attr("src", $src);
-
-      // Lock Body Scroll
-      $body.toggleClass('no-scroll');
-
-    });
-
-    // Hide Overlay Lightbox
-    $overlay.on('click', function() {
-
-      // Hide Overlay Image
-      $(this).fadeOut(0);
-
-      // Remove Image from DOM
-      $overlay.children("img").remove();
-
-      // Unlock Body Scroll
-      $body.toggleClass('no-scroll');
-
-    });
-
-    /**
      *  Scroll Event
      **/
     $window.scroll(function() {
@@ -150,16 +85,6 @@
       } else {
         $go_top.removeClass('active');
       }
-
-      // Reveal Item on Scroll
-      function revealItem($item) {
-          $item.each(function(i) {
-              $item.eq(i).addClass("is-showing");
-          });
-      }
-
-      // Portfolio Reveal Images
-      revealItem($portfolio_grid_item);
 
     });
 

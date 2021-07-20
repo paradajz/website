@@ -57,6 +57,10 @@ section.portfolio-section {
 
   }
 
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba($primary, 0.5);
+  }
+
   // Portfolio Grid
   .portfolio-grid {
     overflow-x: hidden;
@@ -156,37 +160,6 @@ section.portfolio-section {
 
       }
 
-    }
-
-    // Overlay Lightbox
-    .overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: $black-transparent;
-      z-index: 99999999999999;
-
-      img {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 25px;
-        max-width: 75%;
-        max-height: 75%;
-      }
-
-      .text {
-        color: #fff;
-        font-size: 50px;
-        line-height: 1em;
-        text-align: center;
-        vertical-align: middle;
-      }
     }
 
   }
