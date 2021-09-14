@@ -146,8 +146,8 @@ features:
   description: No drivers required
   icon: pe-7s-smile
 
-- title: MIDI configuration
-  description: Configurable MIDI channels and messages
+- title: DMX
+  description: DMX output supported (with additional circuitry)
   icon: pe-7s-smile
 
 - title: Presets
@@ -317,9 +317,9 @@ core-features-left:
   icon: pe-7s-light
 
 # Feature
-- name: SPI
-  description: For future expansion
-  icon: pe-7s-smile
+- name: DMX output
+  description: Open Lighting Architecture compatible
+  icon: pe-7s-network
 
 # Feature
 - name: UART
