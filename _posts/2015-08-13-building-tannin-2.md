@@ -28,7 +28,7 @@ And one from the back:
 
 I can assure you it looks much better on the pictures than it really looked.
 
-It had 16 potentiometers and 16 buttons in 4x4 grid, 3 additional metal buttons and 4 LEDs at the bottom. Very simple and very efficient layout. Over the time, I got used to it so much that I mapped virtually every function I need in my DJ software (Traktor Pro) using nothing but this controller. Still, it was my first controller, and naturally it had some flaws. First and most obvious one, there were too many screws. Second, that box was huge, too heavy and after few months it started to crack all over the place. It was also such a pain in the ass to carry around. On the hardware side of things, it featured Arduino Nano and circuitry that later became the basis for [OpenDeck board](https://shanteacontrols.wpcomstaging.com/2014/08/11/building-opendeck-platform-part-1/). If you're wondering what's that chemical - it's [Flavan-3-ol](https://en.wikipedia.org/wiki/Flavan-3-ol).
+It had 16 potentiometers and 16 buttons in 4x4 grid, 3 additional metal buttons and 4 LEDs at the bottom. Very simple and very efficient layout. Over the time, I got used to it so much that I mapped virtually every function I need in my DJ software (Traktor Pro) using nothing but this controller. Still, it was my first controller, and naturally it had some flaws. First and most obvious one, there were too many screws. Second, that box was huge, too heavy and after few months it started to crack all over the place. It was also such a pain in the ass to carry around. On the hardware side of things, it featured Arduino Nano and circuitry that later became the basis for [OpenDeck board](https://shanteacontrols.com/2014/08/11/building-opendeck-platform-part-1/). If you're wondering what's that chemical - it's [Flavan-3-ol](https://en.wikipedia.org/wiki/Flavan-3-ol).
 
 So, now that we have Tannin 1 as a reference, let's move on to Tannin 2.
 
@@ -40,7 +40,7 @@ As you can see, design is really similar to original Tannin, but with few tweaks
 
 ## Plate
 
-As with the [Ceylon controller](https://shanteacontrols.wpcomstaging.com/2015/02/24/building-ceylon/), I wanted to experiment a bit with plate color. This time, I picked green one, and it really looks great - same as any gravoply plate.
+As with the [Ceylon controller](https://shanteacontrols.com/2015/02/24/building-ceylon/), I wanted to experiment a bit with plate color. This time, I picked green one, and it really looks great - same as any gravoply plate.
 
 ![]({{ site.baseurl }}/images/blog/tannin_plate.png)
 

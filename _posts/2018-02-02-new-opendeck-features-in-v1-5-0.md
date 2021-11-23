@@ -65,7 +65,7 @@ This option is used only for single-color LEDs and you can define which velocity
 
 ## Version info
 
-Since I added [support for Arduino boards](https://shanteacontrols.wpcomstaging.com/2017/12/14/opendeck-on-arduino/), the info window now displays board name (variant) which is being used.
+Since I added [support for Arduino boards](https://shanteacontrols.com/2017/12/14/opendeck-on-arduino/), the info window now displays board name (variant) which is being used.
 
 ![]({{ site.baseurl }}/images/blog/8c2b8-webui_version_info.png)
 

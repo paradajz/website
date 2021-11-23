@@ -14,6 +14,6 @@ It's now been almost a month since I published the long-awaited post about OpenD
 
 The big news here is that I received enough pre-orders for OpenDeck boards. After all payments are done, I'll order a new batch of boards and send them once they arrive. This process should take about a month, hopefully less. Note that boards can still be pre-ordered, but next batch of boards will be ordered a bit later.
 
-I have also opened my own domain (finally!), so web configuration utility can now be found on [shanteacontrols.com](https://shanteacontrols.wpcomstaging.com). This blog will also move to that domain soon, so that everything is in one place.
+I have also opened my own domain (finally!), so web configuration utility can now be found on [shanteacontrols.com](https://shanteacontrols.com). This blog will also move to that domain soon, so that everything is in one place.
 
 This is all for now, stay tuned for more!

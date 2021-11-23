@@ -11,7 +11,7 @@ comments: true
 
 I've built two new controllers which I've named DubFocus (dub producers are really keen into very knobby MIDI controllers), even though the name can't be seen anywhere on them.
 
-The controllers feature 12 faders, 48 pots, 12 buttons with LEDs... Oh wait, [you've heard this before, right](https://shanteacontrols.wpcomstaging.com/2018/07/16/conscious-youth-custom-controller/)? What's the point of this post then? Let me explain.
+The controllers feature 12 faders, 48 pots, 12 buttons with LEDs... Oh wait, [you've heard this before, right](https://shanteacontrols.com/2018/07/16/conscious-youth-custom-controller/)? What's the point of this post then? Let me explain.
 
 Ben ([Alpha Steppa](https://www.steppas.com/steprec/)), the man to whose tunes I've jammed on countless times, contacted me few months ago because he wanted the same controller I've already built for Conscious Youth. I was thrilled. The only difference would be the color of the plate and LEDs. Then some short time after that, Matt from [PurpleFade](https://purplefaderecords.bandcamp.com/) records contacted me as well requesting the same controller. So, three same controllers in a row, by my standards this was moving into mass production! Hence, new, simpler electronics was needed. As an reminder, this is what the inside of the original controller looked like:
 

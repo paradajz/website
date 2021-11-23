@@ -14,7 +14,7 @@ comments: true
 
 Yesterday I've released [OpenDeck v2.1.1](https://github.com/shanteacontrols/OpenDeck/releases/tag/v2.1.1). Time for another OpenDeck release feature roundup!
 
-_There's been a few releases on GitHub since [v2.0](https://shanteacontrols.wpcomstaging.com/2018/05/28/opendeck-software-v2-0/), however I don't really write here about every release since most of them contain only a handful of fixes and new features. This post covers all the news since [v2.0](https://github.com/shanteacontrols/OpenDeck/releases/tag/v2.0.1)._
+_There's been a few releases on GitHub since [v2.0](https://shanteacontrols.com/2018/05/28/opendeck-software-v2-0/), however I don't really write here about every release since most of them contain only a handful of fixes and new features. This post covers all the news since [v2.0](https://github.com/shanteacontrols/OpenDeck/releases/tag/v2.0.1)._
 
 ## Pitch bend
 

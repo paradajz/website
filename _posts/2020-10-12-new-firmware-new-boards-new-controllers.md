@@ -19,7 +19,7 @@ After more than a year of work, I've finally released [new firmware, called v5](
 
 ### Official support for STM32
 
-The support for STM32 is now finally stable and official. Not just that, I am now using STM32F405 as my primary MCU for all new designs - including for [DubFocus controller.](https://shanteacontrols.wpcomstaging.com/2019/08/06/building-dubfocus-controllers/) I will talk about the next-gen DubFocus controllers in another post.
+The support for STM32 is now finally stable and official. Not just that, I am now using STM32F405 as my primary MCU for all new designs - including for [DubFocus controller.](https://shanteacontrols.com/2019/08/06/building-dubfocus-controllers/) I will talk about the next-gen DubFocus controllers in another post.
 
 ### New SysEx protocol
 
@@ -39,7 +39,7 @@ No more terminal! Bonus: firmware update is now possible within web configurator
 
 ### Touchscreen support
 
-Two years ago I've build [Bergamot](https://shanteacontrols.wpcomstaging.com/2018/10/14/bergamot-touchscreen-midi-controller/) - a controller based on a touchscreen. The code was a bit specific for that particular controller and for that particular screen, but now, there's official support for every single [Nextion](https://nextion.tech/) touchscreen in OpenDeck firmware! Not only that, [Stone HMI](http://www.stone-hmi.com/) screens are supported as well. Currently, the firmware supports touchscreen buttons and touchscreen icons. These icons are, as far as user and firmware are concerned - just normal LEDs. Icon configuration is actually LED configuration, so every option available right now for LEDs is available for touchsreen icons as well - blinking, MIDI in control, local control etc. Same thing goes for buttons - buttons are also configured just like normal physical buttons. There's detailed guide on how to configure touchscreens in the [wiki](https://github.com/shanteacontrols/OpenDeck/wiki/Configuring-touchscreens).
+Two years ago I've build [Bergamot](https://shanteacontrols.com/2018/10/14/bergamot-touchscreen-midi-controller/) - a controller based on a touchscreen. The code was a bit specific for that particular controller and for that particular screen, but now, there's official support for every single [Nextion](https://nextion.tech/) touchscreen in OpenDeck firmware! Not only that, [Stone HMI](http://www.stone-hmi.com/) screens are supported as well. Currently, the firmware supports touchscreen buttons and touchscreen icons. These icons are, as far as user and firmware are concerned - just normal LEDs. Icon configuration is actually LED configuration, so every option available right now for LEDs is available for touchsreen icons as well - blinking, MIDI in control, local control etc. Same thing goes for buttons - buttons are also configured just like normal physical buttons. There's detailed guide on how to configure touchscreens in the [wiki](https://github.com/shanteacontrols/OpenDeck/wiki/Configuring-touchscreens).
 
 I've also built myself a brand new controller which features 10" Nextion display called Cardamom.
 
@@ -101,7 +101,7 @@ There is also a new ability which allows users to configure the button to send d
 
 Sadly, there are some bad news as well - due to large amount of new features, OpenDeck no longer supports ATmega328P and ATmega32u4 - so boards like Arduino Uno, Arduino Leonardo, Arduino Pro Micro etc. aren't supported anymore as a result of this. This is not an arbitrary decision - the firmware simply doesn't fit anymore into the flash memory of this boards. However, last [v4](https://github.com/shanteacontrols/OpenDeck/releases/tag/v4.1.3) firmware release can still be loaded on these boards and will work just fine.
 
-New build system which allows defining of custom board variants is also part of this release. I've written about this in the [previous post](https://shanteacontrols.wpcomstaging.com/2020/06/11/creating-custom-opendeck-board-variants/).
+New build system which allows defining of custom board variants is also part of this release. I've written about this in the [previous post](https://shanteacontrols.com/2020/06/11/creating-custom-opendeck-board-variants/).
 
 ### New boards
 

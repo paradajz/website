@@ -49,7 +49,7 @@ Now, Arduino Micro, Leonardo, Uno and Mega2560 can all run OpenDeck software. Pl
 
 To get OpenDeck on Arduino, there are three options:
 
-1. Buy pre-configured Arduino board directly from me. This saves you a lot of hassle with compiling and uploading the code to Arduino (you will also need AVR programmer such as [USBasp](http://www.fischl.de/usbasp/) or [AVRISP mkII](http://www.atmel.com/tools/avrispmkii.aspx)). The pricing for this option is listed on my new [website.](https://shanteacontrols.wpcomstaging.com/)
+1. Buy pre-configured Arduino board directly from me. This saves you a lot of hassle with compiling and uploading the code to Arduino (you will also need AVR programmer such as [USBasp](http://www.fischl.de/usbasp/) or [AVRISP mkII](http://www.atmel.com/tools/avrispmkii.aspx)). The pricing for this option is listed on my new [website.](https://shanteacontrols.com/)
 2. Buy pre-compiled firmware and upload it to Arduino yourself. If you already happen to have Arduino boards laying around together with AVR programmer, you can buy pre-compiled firmware from me for 20€.
 3. Download the source code from [GitHub](https://github.com/shanteacontrols/OpenDeck), compile it and upload to Arduino yourself. This is for brave souls only - you will need Linux-based environment to compile the code, as well as familiarity with command-line tools.
 

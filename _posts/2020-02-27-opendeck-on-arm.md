@@ -14,7 +14,7 @@ image: "stm32f4discovery.jpg"
 comments: true
 ---
 
-A little over two years ago, I've announced that [OpenDeck firmware started supporting various Arduino boards](https://shanteacontrols.wpcomstaging.com/2017/12/14/opendeck-on-arduino/). It was a major milestone - the firmware design was modular enough that it could support various targets instead of just official OpenDeck board. Now, it's time to announce another major milestone: OpenDeck can now run on 32-bit STM32 microcontrollers!
+A little over two years ago, I've announced that [OpenDeck firmware started supporting various Arduino boards](https://shanteacontrols.com/2017/12/14/opendeck-on-arduino/). It was a major milestone - the firmware design was modular enough that it could support various targets instead of just official OpenDeck board. Now, it's time to announce another major milestone: OpenDeck can now run on 32-bit STM32 microcontrollers!
 
 ## Rationale
 
