@@ -60,3 +60,7 @@ Based on interest, I plan to make OpenDeck available on more powerful ARM-based 
 ## EDIT:
 
 As of OpenDeck v3.0.0 pre-compiled Arduino binaries are part of the [release on GitHub](https://github.com/shanteacontrols/OpenDeck/releases). Also, pre-configured Arduino boards are now available on [Tindie](https://www.tindie.com/stores/paradajz/).
+
+## EDIT 2:
+
+See status of Arduino [here](https://shanteacontrols.com/2019/07/02/status-of-opendeck-on-arduino).
