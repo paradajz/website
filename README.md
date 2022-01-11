@@ -4,7 +4,7 @@ Based on [Sera theme](https://themeforest.net/item/sera-onepage-multipurpose-jek
 
 ## Setup
 
-1. [Node 14.17](https://nodejs.org/en/)
+1. [Node 16.13](https://nodejs.org/en/)
     * Install with [nvm](https://github.com/nvm-sh/nvm)
 2. [Jekyll](http://jekyllrb.com/)
     * [Requirements](https://jekyllrb.com/docs/installation/other-linux/)

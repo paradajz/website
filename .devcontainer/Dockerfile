@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 ARG USER=shanteacontrols
-ARG NODE_VERSION=14.17.3
+ARG NODE_VERSION=16.13.2
 ENV GEM_HOME /home/$USER/gems
 ENV NVM_DIR /home/$USER/.nvm
 
@@ -36,7 +36,7 @@ echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 RUN gem install jekyll bundler
 
 RUN \
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash && \
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash && \
 . $NVM_DIR/nvm.sh && \
 nvm install $NODE_VERSION
 
