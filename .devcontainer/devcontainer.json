@@ -1,0 +1,17 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.155.1/containers/cpp
+{
+    "name": "ShanteaControlsWebsite",
+
+    "build": {
+        "context": ".",
+        "dockerfile": "Dockerfile"
+    },
+
+    // Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+    "remoteUser": "shanteacontrols",
+    "workspaceMount": "type=bind,src=${localWorkspaceFolder},dst=/home/shanteacontrols/${localWorkspaceFolderBasename}",
+    "workspaceFolder": "/home/shanteacontrols/${localWorkspaceFolderBasename}",
+
+    "postCreateCommand": "bundle install && npm install -g gulp && npm install"
+}
