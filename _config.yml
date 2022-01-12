@@ -177,122 +177,98 @@ portfolio:
 - title: Cardamom
   categories: [Shantea Controls]
   image: cardamom.jpg
-  url:
 
 - title: Bergamot
   categories: [Shantea Controls, Bergamot]
   image: bergamot.jpg
-  url: 'https://shanteacontrols.com'
 
 - title: Bergamot
   categories: [Shantea Controls, Bergamot]
   image: bergamot_2.jpg
-  url:
 
 - title: Bergamot
   categories: [Shantea Controls, Bergamot]
   image: bergamot_3.jpg
-  url:
 
 - title: Bergamot
   categories: [Shantea Controls, Bergamot]
   image: bergamot_4.jpg
-  url:
 
 - title: Bergamot
   categories: [Shantea Controls, Bergamot]
   image: bergamot_5.jpg
-  url:
 
 - title: Rooibos
   categories: [Shantea Controls, Rooibos]
   image: rooibos_2.jpg
-  url:
 
 - title: Rooibos
   categories: [Shantea Controls, Rooibos]
   image: rooibos_3.jpg
-  url:
 
 - title: DubFocus 12
   categories: [Shantea Controls, DubFocus]
   image: df12.jpg
-  url:
 
 - title: DubFocus 12
   categories: [Shantea Controls, DubFocus]
   image: df12_2.jpg
-  url:
 
 - title: DubFocus 12
   categories: [Shantea Controls, DubFocus]
   image: df12_3.jpg
-  url:
 
 - title: DubFocus 12
   categories: [Shantea Controls, DubFocus]
   image: df12_4.jpg
-  url:
 
 - title: DubFocus 12
   categories: [Shantea Controls, DubFocus]
   image: df12_5.jpg
-  url:
 
 - title: DubFocus 12
   categories: [Shantea Controls, DubFocus]
   image: df12_6.jpg
-  url:
 
 - title: DubFocus 16
   categories: [Shantea Controls, DubFocus]
   image: df16.jpg
-  url:
 
 - title: DubFocus 16
   categories: [Shantea Controls, DubFocus]
   image: df16_2.jpg
-  url:
 
 - title: DubFocus 16
   categories: [Shantea Controls, DubFocus]
   image: df16_3.jpg
-  url:
 
 - title: DubFocus 16
   categories: [Shantea Controls, DubFocus]
   image: df16_4.jpg
-  url:
 
 - title: Made for Jamiel Allen
   categories: [Shantea Controls]
   image: jamiel.jpg
-  url:
 
 - title: Made for Jamiel Allen
   categories: [Shantea Controls]
   image: jamiel_2.jpg
-  url:
 
 - title: Built by Michael LaChance
   categories: [User made]
   image: lachance.jpg
-  url:
 
 - title: Built by Rich Parker
   categories: [User made]
   image: parker.jpg
-  url:
 
 - title: Built by Chad Kettering
   categories: [User made]
   image: chad.jpg
-  url:
 
 - title: Built by Morten Berthelsen
   categories: [User made]
   image: morten.jpg
-  url:
 
 
 #####################################
