@@ -35,7 +35,7 @@
 
       {% for item in site.portfolio %}
 
-        <a  class="item tst" 
+        <a  class="item"
             data-src="{{ site.baseurl }}/images/portfolio/{{ item.image }}" 
             data-categories="{% for category in item.categories %} {{ category }} {% endfor %}" 
             data-sub-html="<h2>{{ item.title }}</h2> <h3>Category: {{ item.categories | first }}</h3>">
