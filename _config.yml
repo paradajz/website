@@ -270,6 +270,43 @@ portfolio:
   categories: [User made]
   image: morten.jpg
 
+#####################################
+############  Supported boards ######
+#####################################
+boards-title: Supported boards
+boards-description: OpenDeck firmware runs on many boards, from small to large. Check the project wiki for flashing guides!
+
+boards:
+
+- title: STM32F4 Black Pill
+  image: blackpill.jpg
+
+- title: STM32407 Discovery
+  image: discovery.jpg
+
+- title: Arduino Mega2560
+  image: mega2560.jpg
+
+- title: Mega2560 Mini
+  image: mega2560_mini.jpg
+
+- title: STM32F4VE
+  image: stm32f4ve.jpg
+
+- title: Teensy++ 2.0
+  image: teensy2pp.jpg
+
+- title: TPyBoard
+  image: tpyboard.jpg
+
+- title: Waveshare Core405R
+  image: ws405r.jpg
+
+- title: Waveshare Core407I
+  image: ws407i.jpg
+
+- title: Waveshare Core405V
+  image: ws407v.jpg
 
 #####################################
 ##########  Core Features  ##########

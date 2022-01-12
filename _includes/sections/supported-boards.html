@@ -1,0 +1,35 @@
+<section class="site-section portfolio-section" id="boards">
+  <div class="container">
+
+    <!-- Section Heading -->
+    <div class="row text-center">
+
+      <!-- Section Header -->
+      <header class="col-md-8 col-md-push-2 col-sm-12 section-header">
+        <h2>{{ site.boards-title }}</h2>
+        <hr class="normal">
+      </header>
+
+      <!-- Section Content -->
+      <div class="col-md-8 col-md-push-2 col-sm-12 section-content">
+        <p>{{ site.boards-description }}</p>
+      </div>
+
+    </div>
+
+    <div id="board-container">
+
+      {% for item in site.boards %}
+
+        <a  class="board"
+            data-src="{{ site.baseurl }}/images/boards/{{ item.image }}" 
+            data-sub-html="<h2>{{ item.title }}</h2>">
+          <img style="padding: 15px;" class="col-md-4 col-sm-6" src="{{ site.baseurl }}/images/boards/{{ item.image }}"/>
+        </a>
+
+      {% endfor %}
+
+    </div>
+
+  </div>
+</section>
