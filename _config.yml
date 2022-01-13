@@ -69,7 +69,7 @@ header-focus-button:
 
 # Secondary Buttons
 header-secondary-button:
-  title: Configurator
+  title: Configure now
   url: https://config.shanteacontrols.com
 
 ####################################
