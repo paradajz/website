@@ -233,6 +233,12 @@
 
   }
 
+  .parallax .cover {
+    img {
+      top: 78%;
+    }
+  }
+
 }
 
 // Responsive Navigation Menu
@@ -252,6 +258,12 @@
       }
     }
 
+  }
+
+  .parallax .cover {
+    img {
+      top: 80%;
+    }
   }
 
 }
@@ -278,6 +290,12 @@
           font-size: 1rem;
         }
       }
+    }
+  }
+
+  .parallax .cover {
+    img {
+      top: 80%;
     }
   }
 }
