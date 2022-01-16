@@ -1,10 +1,10 @@
 <!-- Site Header -->
-<header class="site-header blog-header parallax" id="home" data-scrollax-parent="true">
+<header class="site-header parallax" id="home" data-scrollax-parent="true">
 
   <!-- Parallax Header Image -->
   <div class="parallax-wrapper">
-    <div class="cover" data-scrollax="properties: { 'translateY': '48%' }">
-      <img style="min-width: 100%;" src="{{ site.baseurl }}/images/blog/header.jpg"/>
+    <div class="cover" data-scrollax="properties: { 'translateY': '50%' }">
+      <img style="filter: brightness(80%);" src="{{ site.baseurl }}/images/header-image.png"/>
     </div>
   </div>
 
@@ -34,18 +34,19 @@
         <!-- Navigation Menu -->
         <nav id="navMenu" class="nav-menu">
           <ul class="menu">
-            <li><a href="{{ site.baseurl }}/#about">ABOUT</a></li>
-            <li><a href="{{ site.baseurl }}/#features">FEATURES</a></li>
-            <li><a href="{{ site.baseurl }}/#parallax-features">SPECS</a></li>
-            <li><a href="{{ site.baseurl }}/#portfolio">GALLERY</a></li>
-            <li><a href="{{ site.baseurl }}/#testimonials">TESTIMONIALS</a></li>
-            <li class="current-menu-item"><a href="{{ site.baseurl }}/blog">BLOG</a></li>
-            <li><a href="{{ site.baseurl }}/#boards">BOARDS</a></li>
-            <li><a href="{{ site.baseurl }}/#contact">CONTACT</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#features">FEATURES</a></li>
+            <li><a href="#parallax-features">SPECS</a></li>
+            <li><a href="#portfolio">GALLERY</a></li>
+            <li><a href="#testimonials">TESTIMONIALS</a></li>
+            <li><a href="/blog/blog.html" target="_blank">BLOG</a></li>
+            <li><a href="#boards">BOARDS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
 
       </div>
+
 
     </div>
 
@@ -56,9 +57,14 @@
 
         <!-- Heading Title -->
         <div class="row heading-title">
-          <h2>Shantea Controls</h2>
+          <h2cover>{{ site.header-tagline }}</h2cover>
           <hr class="small">
-          <h1 class="thin">{{ page.title }}</h1>
+          <h1cover class="thin">{{ site.header-title }}</h1>
+        </div>
+
+        <!-- Header Buttons -->
+        <div class="row buttons-header">
+          <div class="btn btn-lg btn-default"><a href="{{ site.header-secondary-button.url }}" target="_blank" class="button-cta">{{ site.header-secondary-button.title }}</a></div>
         </div>
 
       </div>

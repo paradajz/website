@@ -1,47 +1,52 @@
 ---
-layout: page
+layout: blog
 ---
 
-<!-- Blog Article -->
-<div class="post-full">
-  <article class="blog-article blog-single-page clearfix">
+{% include page-title.html %}
+<div class="post-content-area pb-100 clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <div class="s-post-details">
+          {% if page.image %}
+          <div class="post-image mb-4">
+            <img
+              class="mx-auto d-block"
+              src="{{ site.baseurl }}/images/blog/{{page.image}}"
+              alt="{{page.title}}"
+            />
+          </div>
+          {% endif %}
 
-    <!-- Article Header -->
-    {% if page.image != "post_default_header.jpg" %}
-    <header class="article-header">
-      <div class="img-wrap">
-        <img src="{{ site.baseurl }}/images/blog/{{ page.image }}" alt="Article Blog Image">
+          <div class="entry-content">{{page.content}}</div>
+          <div class="inner-padding fullwidth pb-60">
+            <div class="post-share-icon clearfix">
+              <div class="tag-list">
+                <div class="row">
+                  <div class="col-md-8">
+                    <p class="float-left pr-2"><strong>Tags :</strong></p>
+                    <ul class="float-left">
+                      {% for tag in page.tags %} {% capture tag_name %}{{ tag
+                      }}{% endcapture %}
+                      <li>
+                        <a href="/tag/{{tag_name}}/blog.html"> #{{tag_name}}</a>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  <div class="col-md-4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="categories-carousel pb-60 clearfix">
+          <div class="section-title">
+            <h3>Related Posts</h3>
+          </div>
+          {% include related_posts_carousel.html %}
+        </div>
       </div>
-    </header>
-    {% endif %}
-
-    <!-- Article Content -->
-    <article class="markdown-body">
-      {{ page.content }}
-    </article>
-
-    <!-- Article Tool Boxes -->
-    <div class="article-boxes">
-
-      <!-- Tags Box -->
-      <div class="tags-article box">
-        <span class="title">Tags:</span>
-        <ul class="tag-cloud-box box-content">
-          {% assign tags_list = page.tags %}
-            {% if tags_list.first[0] == null %}
-              {% for tag in tags_list %}
-                <li><a href="{{ site.baseurl }}/tag/{{ tag | slugify }}">{{ tag }}</a></li>
-              {% endfor %}
-            {% else %}
-              {% for tag in tags_list %}
-                <li><a href="{{ site.baseurl }}/tag/{{ tag[0] | slugify }}">{{ tag[0] }}</a></li>
-              {% endfor %}
-            {% endif %}
-          {% assign tags_list = nil %}
-        </ul>
-      </div>
-
     </div>
-
-  </article>
+  </div>
 </div>
