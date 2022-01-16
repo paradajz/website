@@ -7,7 +7,7 @@ categories:
   - "info"
 tags: 
   - "opendeck"
-image: "post_default_header.jpg"
+image: "cover_opendeck_v6.jpg"
 comments: true
 ---
 
