@@ -2,7 +2,7 @@
 layout: post
 title: "The touchscreen trio"
 date: "2021-02-18"
-image: "post_default_header.jpg"
+image: "touchscreen_trio.jpg"
 comments: true
 ---
 

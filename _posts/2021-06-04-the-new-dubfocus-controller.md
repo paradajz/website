@@ -7,7 +7,7 @@ categories:
   - "info"
 tags: 
   - "dubfocus"
-image: "post_default_header.jpg"
+image: "193474182_259492185848862_7612030630368761512_n.jpg"
 comments: true
 ---
 
