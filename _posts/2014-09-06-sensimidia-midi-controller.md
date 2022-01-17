@@ -2,13 +2,10 @@
 layout: post
 title: "Sensimidia MIDI controller"
 date: "2014-09-06"
-categories: 
-  - "build-log"
-  - "design"
 tags: 
-  - "opendeck"
   - "sensimidia"
-image: "post_default_header.jpg"
+  - "buildlog"
+image: "p1010003.jpg"
 comments: true
 ---
 

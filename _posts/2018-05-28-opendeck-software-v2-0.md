@@ -2,11 +2,9 @@
 layout: post
 title: "OpenDeck software v2.0"
 date: "2018-05-28"
-categories: 
-  - "development"
 tags: 
   - "opendeck"
-image: "post_default_header.jpg"
+  - "announce"
 comments: true
 ---
 
@@ -14,7 +12,7 @@ OpenDeck software has finally reached a [new milestone: v2.0](https://github.com
 
 ## MIDI channels
 
-Until now, assignment of MIDI channels was only possible globally, per MIDI message. For instance, you could define MIDI channels for MIDI notes, for MIDI CC messages etc, but not individually per component. Well, this is possible as of now, so it's possible to assign any MIDI channel to any button, potentiometer, encoder or LED! This required some trickery with underlying database system that I'm using in OpenDeck since otherwise I wouldn't have enough EEPROM memory. Keep in mind that the brain behind OpenDeck features only 1024 bytes of EEPROM. Basically, given that MIDI channels have values 1-16 it's possible to store them as values 0-15, which fits in 4 bits. Since one byte has 8 bits, it's possible to store two channels in a single byte, hence the introduction of HALFBYTE\_PARAMETER type in database system. Because of this, I can store all MIDI channels I need (176 in total for OpenDeck board) in only 88 bytes. This ability really extends configurability of OpenDeck and I'm sure many will find it useful.
+Until now, assignment of MIDI channels was only possible globally, per MIDI message. For instance, you could define MIDI channels for MIDI notes, for MIDI CC messages etc, but not individually per component. Well, this is possible as of now, so it's possible to assign any MIDI channel to any button, potentiometer, encoder or LED! This required some trickery with underlying database system that I'm using in OpenDeck since otherwise I wouldn't have enough EEPROM memory. Keep in mind that the brain behind OpenDeck features only 1024 bytes of EEPROM. Basically, given that MIDI channels have values 1-16 it's possible to store them as values 0-15, which fits in 4 bits. Since one byte has 8 bits, it's possible to store two channels in a single byte, hence the introduction of `HALFBYTE_PARAMETER` type in database system. Because of this, I can store all MIDI channels I need (176 in total for OpenDeck board) in only 88 bytes. This ability really extends configurability of OpenDeck and I'm sure many will find it useful.
 
 ## Encoders
 

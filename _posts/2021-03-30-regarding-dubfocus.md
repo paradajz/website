@@ -2,10 +2,9 @@
 layout: post
 title: "Regarding DubFocus"
 date: "2021-03-30"
-categories: 
-  - "info"
 tags: 
   - "dubfocus"
+  - "announce"
 image: "166086360_207954164335998_7262799458133236482_n.jpg"
 comments: true
 ---

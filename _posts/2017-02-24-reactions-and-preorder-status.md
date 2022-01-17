@@ -2,11 +2,8 @@
 layout: post
 title: "Reactions and preorder status"
 date: "2017-02-24"
-categories: 
-  - "info"
 tags: 
   - "opendeck"
-image: "post_default_header.jpg"
 comments: true
 ---
 

@@ -3,6 +3,8 @@ layout: post
 title: "The touchscreen trio"
 date: "2021-02-18"
 image: "touchscreen_trio.jpg"
+tags: 
+  - "buildlog"
 comments: true
 ---
 
@@ -56,6 +58,7 @@ Having built Rooibos I’ve filled all my controller needs, however, I still had
  
 
 ## X/Y support
+
 There is one more thing I’ve added to OpenDeck firmware in latest release – the ability to define custom regions on screen to serve as analog components. Defining is done in Web Ui, just like everything else. This could enable some really cool use-cases. Sadly, all I could think of and show off was controlling two effects at the same time in Traktor DJ. Here’s to hoping I get to see more use cases of this!
 
 <div class="videoWrapper">

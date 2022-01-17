@@ -2,11 +2,9 @@
 layout: post
 title: "New firmware, new boards, new controllers"
 date: "2020-10-12"
-categories: 
-  - "development"
-  - "info"
 tags: 
   - "opendeck"
+  - "announce"
 image: "IMG_3135_web.jpg"
 comments: true
 ---
@@ -63,33 +61,33 @@ I've been asked this question a lot - how do I use OpenDeck board as SysEx progr
 
 ### New UI
 
-UI has been totally rewritten and redesigned by [Tomislav Glavas](https://github.com/wyrd-code). If you're looking for WebMIDI expert, well, here's brand new one. ;) I'll let the screenshots below do the talking.
+UI has been totally rewritten and redesigned by [Tomislav Glavas](https://github.com/wyrd-code). If you're looking for WebMIDI expert, well, here's brand new one. I'll let the screenshots below do the talking.
 
-![]({{ site.baseurl }}/images/blog/new_webui_13.png)
-
-![]({{ site.baseurl }}/images/new_webui_12.png)
-
-![]({{ site.baseurl }}/images/new_webui_11.png)
-
-![]({{ site.baseurl }}/images/blog/new_webui_10.png)
-
-![]({{ site.baseurl }}/images/new_webui_09.png)
-
-![]({{ site.baseurl }}/images/blog/new_webui_08.png)
-
-![]({{ site.baseurl }}/images/blog/new_webui_07.png)
-
-![]({{ site.baseurl }}/images/blog/new_webui_06.png)
-
-![]({{ site.baseurl }}/images/blog/new_webui_05.png)
-
-![]({{ site.baseurl }}/images/blog/new_webui_04.png)
-
-![]({{ site.baseurl }}/images/blog/new_webui_03.png)
+![]({{ site.baseurl }}/images/blog/new_webui_01.png)
 
 ![]({{ site.baseurl }}/images/blog/new_webui_02.png)
 
-![]({{ site.baseurl }}/images/blog/new_webui_01.png)
+![]({{ site.baseurl }}/images/blog/new_webui_03.png)
+
+![]({{ site.baseurl }}/images/blog/new_webui_04.png)
+
+![]({{ site.baseurl }}/images/blog/new_webui_05.png)
+
+![]({{ site.baseurl }}/images/blog/new_webui_06.png)
+
+![]({{ site.baseurl }}/images/blog/new_webui_07.png)
+
+![]({{ site.baseurl }}/images/blog/new_webui_08.png)
+
+![]({{ site.baseurl }}/images/blog/new_webui_09.png)
+
+![]({{ site.baseurl }}/images/blog/new_webui_10.png)
+
+![]({{ site.baseurl }}/images/blog/new_webui_11.png)
+
+![]({{ site.baseurl }}/images/blog/new_webui_12.png)
+
+![]({{ site.baseurl }}/images/blog/new_webui_13.png)
 
 New UI supports both the old and new SysEx protocol, it supports column view so that it's easy to see all options for specific block at once, it supports firmware updates, backup and restore, activity log is showing much more detailed info than the old one, there's more helpful information for available options now, the UI doesn't crash if some parameters aren't supported etc. I think it's really phenomenal - Tomislav did [great job](https://www.youtube.com/watch?v=hQRv0qM_5rQ) here, and more than that, did some things I didn't even ask for which improved the entire application. We both have same mindset regarding the things we build so the entire collaboration went really smoothly. Oh, the entire thing is also [open-source](https://github.com/shanteacontrols/OpenDeckUI).
 

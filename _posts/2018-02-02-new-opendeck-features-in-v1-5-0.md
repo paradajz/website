@@ -2,21 +2,18 @@
 layout: post
 title: "New OpenDeck features in v1.5.0"
 date: "2018-02-02"
-categories: 
-  - "development"
 tags: 
-  - "midi"
   - "opendeck"
-  - "webmidi"
-image: "post_default_header.jpg"
+  - "announce"
+image: "ed7e6-webui_nrpn_7bit.png"
 comments: true
 ---
 
-Last time I talked about features in OpenDeck was, well, long time ago. I have released OpenDeck [firmware v1.5.0](https://github.com/shanteacontrols/OpenDeck/releases/tag/v1.5.0) so it's time to fix this!
+Last time I talked about features in OpenDeck was, well, long time ago. I have released OpenDeck [firmware v1.5.0](https://github.com/shanteacontrols/OpenDeck/releases/tag/v1.5.0) so it's time to fix this!
 
 ## NRPN
 
-Many people have been asking me about NRPN support on OpenDeck. I've never used it, so I haven't implemented it before, but now OpenDeck official supports it. For those who don't know, NRPN stands for _Non-registered Part Number_. Behind this cryptic acronym lies solution to a problem which is very specific to how MIDI operates. Since MIDI is actually 7-bit protocol, that is, each MIDI message is composed of bytes containing values 0-127, there isn't much room left for user-defined CC messages, many of them being [already mapped to specific task](http://nickfever.com/music/midi-cc-list) by MIDI specification. So, even though CC message IDs can range 0-127, in reality you can have much less if your software or controller is hardcoded to respond to specific CCs. NPRN solves this problem by doubling CC resolution to 14-bit. Now, instead of only 127 CC IDs, you can map your CC up to 16383. That's ridiculously large. Drawback to this is that instead of sending single MIDI message for CC, three messages are needed to send NRPN message, so MIDI traffic is much larger. This can become obstacle on older MIDI gear, but in practice you really shouldn't have any problems with it. As an example, I'll illustrate the difference between sending MIDI CC and NRPN message.
+Many people have been asking me about NRPN support on OpenDeck. I've never used it, so I haven't implemented it before, but now OpenDeck official supports it. For those who don't know, NRPN stands for _Non-registered Part Number_. Behind this cryptic acronym lies solution to a problem which is very specific to how MIDI operates. Since MIDI is actually 7-bit protocol, that is, each MIDI message is composed of bytes containing values 0-127, there isn't much room left for user-defined CC messages, many of them being [already mapped to specific task](http://nickfever.com/music/midi-cc-list) by MIDI specification. So, even though CC message IDs can range 0-127, in reality you can have much less if your software or controller is hardcoded to respond to specific CCs. NPRN solves this problem by doubling CC resolution to 14-bit. Now, instead of only 127 CC IDs, you can map your CC up to 16383. That's ridiculously large. Drawback to this is that instead of sending single MIDI message for CC, three messages are needed to send NRPN message, so MIDI traffic is much larger. This can become obstacle on older MIDI gear, but in practice you really shouldn't have any problems with it. As an example, I'll illustrate the difference between sending MIDI CC and NRPN message.
 
 Standard CC message:
 

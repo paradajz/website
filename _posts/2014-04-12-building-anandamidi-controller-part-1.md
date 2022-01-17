@@ -2,20 +2,18 @@
 layout: post
 title: "Building Anandamidi controller, part 1"
 date: "2014-04-12"
-categories: 
-  - "design"
 tags: 
   - "anandamidi"
-  - "plate"
-image: "post_default_header.jpg"
+  - "buildlog"
+image: "anandamidi_nice.jpg"
 comments: true
 ---
 
-Anandamidi, MIDI controller with a strange name, is my latest project. Guy for whom I'm building it sent me basic layout and a name, while I'm working on everything else, from design (which always come first) to electronics and programming.
+Anandamidi, MIDI controller with a strange name, is my latest project. Guy for whom I'm building it sent me basic layout and a name, while I'm working on everything else, from design (which always come first) to electronics and programming.
 
 ## Name
 
-Let's explain the name first. "Anandamide is a molecule that plays a role in many bodily activities, including appetite, memory, pain, depression, and fertility - hence its name, which is derived from the word 'ananda' which means 'extreme delight' or 'bliss' in the Sanskrit language" ([Source](http://www.chm.bris.ac.uk/motm/anandamide/ananh.htm)). The molecule looks like this:
+Let's explain the name first. "Anandamide is a molecule that plays a role in many bodily activities, including appetite, memory, pain, depression, and fertility - hence its name, which is derived from the word 'ananda' which means 'extreme delight' or 'bliss' in the Sanskrit language" ([Source](http://www.chm.bris.ac.uk/motm/anandamide/ananh.htm)). The molecule looks like this:
 
 ![]({{ site.baseurl }}/images/blog/640px-anandamide_skeletal-svg.jpg)
 

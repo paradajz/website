@@ -2,13 +2,9 @@
 layout: post
 title: "OpenDeck software v2.1.1"
 date: "2018-08-22"
-categories: 
-  - "development"
 tags: 
-  - "new-release"
   - "opendeck"
-  - "update"
-image: "post_default_header.jpg"
+  - "announce"
 comments: true
 ---
 

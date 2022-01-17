@@ -2,14 +2,8 @@
 layout: post
 title: "Assumptions"
 date: "2014-12-02"
-categories: 
-  - "development"
-  - "programming"
 tags: 
-  - "adc"
-  - "atmega328"
-  - "interrupts"
-image: "post_default_header.jpg"
+  - "programming"
 comments: true
 ---
 
@@ -21,7 +15,7 @@ Before I start talking about Ownduino, I want to clarify what Arduino really is.
 
 ## Ownduino
 
-Ownduino is a lightweight library which contains only few of most used functions from Arduino, like Serial.begin(), Serial.write(), millis() and a couple more functions. You can check out rest of the features on [Ownduino GitHub](https://github.com/shanteacontrols/Ownduino). Ownduino also gives user a choice to completely disable ADC, timer or Serial buffer. digitalRead, digitalWrite or String class are examples of what you will not find in Ownduino.
+Ownduino is a lightweight library which contains only few of most used functions from Arduino, like Serial.begin(), Serial.write(), millis() and a couple more functions. Ownduino also gives user a choice to completely disable ADC, timer or Serial buffer. digitalRead, digitalWrite or String class are examples of what you will not find in Ownduino.
 
 ## MIDI library
 
@@ -53,9 +47,8 @@ By default, Arduino uses prescaler 128, which means it runs at 125kHz. Since sin
 
  
 ```
-void setADCprescaler(uint8\_t prescaler)
+void setADCprescaler(uint8_t prescaler)
 {
-
     //disable ADC before setting new prescaler ADCSRA &= (0<<ADEN);
     switch(prescaler)
     {
@@ -78,9 +71,11 @@ void setADCprescaler(uint8\_t prescaler)
 }
 ```
 
-Now, we get much faster analog read-out, and 8-bit precision. If you consider that ATmega328P has 10-bit ADC, and that ATmega328P is 8-bit microcontroller, ADC value is obviously stored inside two registers: ADCH (2 higher bits) and ADCL (8 lower bits). We can easily discard two bits, so that we need only one register. To do this, we can invert places where ADC value is stored by using this line:
+Now, we get much faster analog read-out, and 8-bit precision. If you consider that ATmega328P has 10-bit ADC, and that ATmega328P is 8-bit microcontroller, ADC value is obviously stored inside two registers: ADCH (2 higher bits) and ADCL (8 lower bits). We can easily discard two bits, so that we need only one register. To do this, we can invert places where ADC value is stored by using this line:
 
-`ADMUX |= (1<<ADLAR)`;
+```
+ADMUX |= (1<<ADLAR);
+```
 
 Now, analog value is in the range 0-255, and when reading the value, we simply read ADCH register, eliminating the need to read extra register. Divide it by two, and we get nice 7-bit value required for MIDI.
 

@@ -2,25 +2,21 @@
 layout: post
 title: "OpenDeck software v3.1.0 - Presets"
 date: "2018-11-19"
-categories: 
-  - "development"
-  - "programming"
 tags: 
-  - "midi"
   - "opendeck"
-  - "presets"
-  - "webmidi"
+  - "programming"
+  - "announce"
 image: "43b3a-presets_global.png"
 comments: true
 ---
 
-**Presets** are one of features I've been asked the most about. In this post I'll talk about the implementation of presets in OpenDeck software.
+Presets are one of features I've been asked the most about. In this post I'll talk about the implementation of presets in OpenDeck software.
 
 ## Implementation
 
 If you don't care about the implementation feel free to just skip to next section!
 
-Since the first version of OpenDeck, database (configuration) has been split into blocks and sections. Block is a logical unit unit of data containing one or more sections. I've created library to handle this, [available on GitHub](https://github.com/shanteacontrols/LESS-DB). For instance, blocks on OpenDeck are buttons, LEDs, encoders etc. Entire structure is listed in [Layout database file](https://github.com/shanteacontrols/OpenDeck/blob/c0bfd5140d82772d80c347d660f1cf06937b8c57/src/application/database/Layout.cpp). If we take button block for example, some of the sections it contains are MIDI channel, MIDI message, type etc. To read or write to database in the OpenDeck software, block, section and index are the required parameters. Example:
+Since the first version of OpenDeck, database (configuration) has been split into blocks and sections. Block is a logical unit unit of data containing one or more sections. I've created library to handle this, [available on GitHub](https://github.com/paradajz/LESS-DB). For instance, blocks on OpenDeck are buttons, LEDs, encoders etc. If we take button block for example, some of the sections it contains are MIDI channel, MIDI message, type etc. To read or write to database in the OpenDeck software, block, section and index are the required parameters. Example:
 
 ```
 database.read(DB_BLOCK_ANALOG, dbSection_analog_lowerLimit, analogID);
@@ -33,7 +29,7 @@ One of the goals when I was implementing the presets was to introduce minimum am
 
 To implement presets, I needed to copy entire configuration to another address, that is, the last address of the previous preset, since the software calculates the size needed dynamically, and therefore, number of supported presets is calculated dynamically as well. No need for hardcoding! Setting the start address in memory was the only required addition to database-handling library in order for this to work, so when preset is changed, only thing that actually changes is that database reads/writes data starting from specified address.
 
-On the top/start of the database is something called system block, which is just another database block, but the one not accessible to user. This block contains preset settings and database signature, which is checked in initialization phase. If the signature isn't correct, factory reset is performed. Changing the preset in the software is done by calling `Database::setPreset()` function, which simply sets new start address in the database, so the example call above remains the same - the data is read from another preset and read/write API isn't disrupted. Entire implementation is available [here](https://github.com/shanteacontrols/OpenDeck/blob/master/src/application/database/Database.cpp).
+On the top/start of the database is something called system block, which is just another database block, but the one not accessible to user. This block contains preset settings and database signature, which is checked in initialization phase. If the signature isn't correct, factory reset is performed. Changing the preset in the software is done by calling `Database::setPreset()` function, which simply sets new start address in the database, so the example call above remains the same - the data is read from another preset and read/write API isn't disrupted.
 
 ## Options
 

@@ -2,9 +2,9 @@
 layout: post
 title: "Building DubFocus controllers"
 date: "2019-08-06"
-categories: 
-  - "build-log"
-  - "design"
+tags: 
+  - "dubfocus"
+  - "buildlog"
 image: "5900f-67627252_159582195172459_3813637260394364928_o.jpg"
 comments: true
 ---

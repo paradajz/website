@@ -2,12 +2,8 @@
 layout: post
 title: "Looking for a Web developer"
 date: "2020-02-16"
-categories: 
-  - "development"
-  - "info"
 tags: 
-  - "opendeck"
-  - "webui"
+  - "announce"
 image: "webui-9.png"
 comments: true
 ---

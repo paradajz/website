@@ -2,16 +2,11 @@
 layout: post
 title: "OpenDeck on Arduino"
 date: "2017-12-14"
-categories: 
-  - "development"
 tags: 
+  - "announce"
   - "arduino"
-  - "diy"
-  - "midi"
-  - "midi-controller"
   - "opendeck"
-  - "usb"
-image: "post_default_header.jpg"
+image: "7230d-23800061_723673337825909_7076454715108837225_o.jpg"
 comments: true
 ---
 
@@ -33,13 +28,11 @@ OpenDeck is [really simple to use](https://ask.audio/articles/review-shantea-con
 
 First I've started with Arduino Leonardo and Pro Micro boards. They actually use exactly the same microcontroller as official OpenDeck boards - Atmel ATmega32u4. Making OpenDeck run on these boards was a simple matter of correctly defining pin addresses in firmware and I was good to go.
 
-![]({{ site.baseurl }}/images/blog/7230d-23800061_723673337825909_7076454715108837225_o.jpg)
-
 ### Arduino Uno and Mega2560
 
 Getting OpenDeck to run on these boards was a bit more complex. In case you're not familiar, these boards actually come with two microcontrollers on board - one main MCU, for which you actually write software (for Uno that is ATmega328 and for Mega that is ATmega2560) and other one (ATmega16u2) which actually serves as USB interface between your PC and main MCU on Arduino board. This MCU enumerates as Virtual COM port on PC, so, when you program the Arduino or read serial input from it, this MCU acts like a gateway between main MCU and your PC. The good thing about this is that Arduino boards actually have header on board which you can use to program this MCU, so, I've programmed it to act like a USB MIDI hardware. Entire communication process between PC and Arduino boards running OpenDeck software is really similar to original solution: all MIDI data sent from PC to Arduino first goes to ATmega16u2 MCU which then simply passes that same data to main Arduino MCU using serial link (also vice-versa), just like before.
 
-![](http://46.101.124.26/wp-content/uploads/2017/12/24210352_727052300821346_3201283979179968047_o.jpg)
+![]({{ site.baseurl }}/images/blog/83930-24210352_727052300821346_3201283979179968047_o.jpg)
 
 ## Outcome
 

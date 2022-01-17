@@ -2,14 +2,8 @@
 layout: post
 title: "Display support on OpenDeck"
 date: "2018-03-02"
-categories: 
-  - "development"
 tags: 
-  - "arduino"
-  - "display"
-  - "i2c"
-  - "lcd"
-  - "oled"
+  - "announce"
   - "opendeck"
 image: "63cee-10-1.jpg"
 comments: true
@@ -27,7 +21,7 @@ On a hardware level, displays are handled using I2C protocol. I’ve chosen it b
 
 ## Software
 
-On the software side of things, I’m using [U8X8 library](https://github.com/olikraus/u8g2/wiki) since it already supports every relevant display controller out there, so why reinvent the wheel? Great thing about this library is that it writes data to displays directly, making it very lightweight and fast. Another great thing about it is that it allows custom hardware access to the displays. I’ve  written a simple wrapper for the library for easier access, and to allow me to define a display resolution and controller in run-time. Because of this, it’s really simple to configure the display in the Web interface.
+On the software side of things, I’m using [U8X8 library](https://github.com/olikraus/u8g2/wiki) since it already supports every relevant display controller out there, so why reinvent the wheel? Great thing about this library is that it writes data to displays directly, making it very lightweight and fast. Another great thing about it is that it allows custom hardware access to the displays. I’ve  written a simple wrapper for the library for easier access, and to allow me to define a display resolution and controller in run-time. Because of this, it’s really simple to configure the display in the Web interface.
 
 ## Web interface configuration
 

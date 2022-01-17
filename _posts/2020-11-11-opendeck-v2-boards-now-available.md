@@ -2,7 +2,9 @@
 layout: post
 title: "OpenDeck v2 boards now available"
 date: "2020-11-11"
-image: "post_default_header.jpg"
+tags: 
+  - "opendeck"
+  - "announce"
 comments: true
 ---
 

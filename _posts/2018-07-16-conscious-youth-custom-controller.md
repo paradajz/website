@@ -2,17 +2,8 @@
 layout: post
 title: "Custom controller for Conscious Youth"
 date: "2018-07-16"
-categories: 
-  - "build-log"
-  - "design"
-  - "development"
 tags: 
-  - "custom"
-  - "diy"
-  - "kodama"
-  - "midi-controller"
-  - "opendeck"
-  - "woodland"
+  - "buildlog"
 image: "540b3-20180713_080821.jpg"
 comments: true
 ---
@@ -31,7 +22,7 @@ Last time I've built a custom MIDI controller for someone was [quite a while ago
 
 Obviously, I never hear from those people again. Building a custom controller is a big undertaking, takes a lot of time and effort and then people expect to pay 100$ for it. Get off my lawn!
 
-Anyways, the unexpected turn of events was when Matt from [Woodland Records](https://woodlandrecordsdub.bandcamp.com/)/[Conscious Youth dub collective](https://consciousyouth.bandcamp.com/) approached me sometime earlier this year (thanks to Karlo from [Homegrown sound](https://soundcloud.com/homegrown_sound) - same Karlo for whom I've built Sensimidia controller) and that same conversation from above actually continued. His requirements were the following:
+Anyways, the unexpected turn of events was when Matt from [Woodland Records](https://woodlandrecordsdub.bandcamp.com/)/[Conscious Youth dub collective](https://consciousyouth.bandcamp.com/) approached me sometime earlier this year (thanks to Karlo from [Homegrown sound](https://soundcloud.com/homegrown_sound) - same Karlo for whom I've built Sensimidia controller) and that same conversation from above actually continued. His requirements were the following:
 
 - 12x faders
 - 12x4 potentiometers

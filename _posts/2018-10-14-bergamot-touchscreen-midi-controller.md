@@ -2,14 +2,8 @@
 layout: post
 title: "Touchscreen-based MIDI controller"
 date: "2018-10-14"
-categories: 
-  - "build-log"
-  - "design"
 tags: 
-  - "bergamot"
-  - "midi"
-  - "opendeck"
-  - "touchscreen"
+  - "buildlog"
 image: "98b26-bergamot_full_angle.jpg"
 comments: true
 ---
@@ -18,7 +12,7 @@ I've built myself a new controller - Bergamot, which is my first controller base
 
 ## New controller - again?
 
-I never do things for the sake of doing them. Bergamot is purely a result of frustration with [Tannin 2](https://shanteacontrols.com/2015/08/13/building-tannin-2/). When I've built Tannin 2, I've been using it happily for quite some time. Then, as I was really busy with [Zvuk9](https://shanteacontrols.com/2017/08/20/zvuk9/), I've barely touched it anymore it so I've borrowed it to [Jah Billah](https://jahbillah.bandcamp.com). Few months ago, he returned it to me and I've started using it again. I've come to realize that it's not really as good as I'd like it to be.
+I never do things for the sake of doing them. Bergamot is purely a result of frustration with [Tannin 2](https://shanteacontrols.com/2015/08/13/building-tannin-2/). When I've built Tannin 2, I've been using it happily for quite some time. Then, as I was really busy with [Zvuk9](https://shanteacontrols.com/2017/08/20/zvuk9/), I've barely touched it anymore it so I've borrowed it to [Jah Billah](https://jahbillah.bandcamp.com). Few months ago, he returned it to me and I've started using it again. I've come to realize that it's not really as good as I'd like it to be.
 
 ## Issues with Tannin 2
 
@@ -30,15 +24,15 @@ I've been thinking what kind of buttons do I want on the updated version of cont
 
 ## Name and design
 
-Following the tradition with naming my controllers (and my entire endeavour - Shan**tea** Controls) with something tea-inspired, I've decided to name this controller Bergamot. [Bergamot](https://en.wikipedia.org/wiki/Bergamot_orange) is a citrus probably best known as the ingredient giving the Earl Grey tea its specific taste. I've been drinking lots of Earl Grey lately, and also watching [Star Trek TNG](https://www.youtube.com/watch?v=R2IJdfxWtPM) for who knows which time already, so Bergamot seemed like a fine, no, wait, I mean, [_splendid_](https://www.youtube.com/watch?v=76uIoL2qma4) choice. I've also re-used the theme I had already used on [Ceylon](https://shanteacontrols.com/2015/02/24/building-ceylon/) controller with geographical coordinates - this time the numbers are representing coordinates of [Reggio di Calabria](https://en.wikipedia.org/wiki/Reggio_Calabria) city in Italy - city also known as "Bergamot city" due to most of the world's Bergamot production being based there.
+Following the tradition with naming my controllers (and my entire endeavour - Shan**tea** Controls) with something tea-inspired, I've decided to name this controller Bergamot. [Bergamot](https://en.wikipedia.org/wiki/Bergamot_orange) is a citrus probably best known as the ingredient giving the Earl Grey tea its specific taste. I've been drinking lots of Earl Grey lately, and also watching [Star Trek TNG](https://www.youtube.com/watch?v=R2IJdfxWtPM) for who knows which time already, so Bergamot seemed like a fine, no, wait, I mean, [_splendid_](https://www.youtube.com/watch?v=76uIoL2qma4) choice. I've also re-used the theme I had already used on [Ceylon](https://shanteacontrols.com/2015/02/24/building-ceylon/) controller with geographical coordinates - this time the numbers are representing coordinates of [Reggio di Calabria](https://en.wikipedia.org/wiki/Reggio_Calabria) city in Italy - city also known as "Bergamot city" due to most of the world's Bergamot production being based there.
 
 ![]({{ site.baseurl }}/images/blog/d8c3f-bergamot_plate.jpg)
 
-The plate is standard 1.5mm thick gravoply with additional 3mm plexiglas plate glued below it. I've been using this scheme for very long now since it's very sturdy and also very cool looking. This time plate is in beautiful orange. Other than the touchscreen, the layout is the same as on Tannin controller - 16 potentiometers and 4 encoders.
+The plate is standard 1.5mm thick gravoply with additional 3mm plexiglas plate glued below it. I've been using this scheme for very long now since it's very sturdy and also very cool looking. This time plate is in beautiful orange. Other than the touchscreen, the layout is the same as on Tannin controller - 16 potentiometers and 4 encoders.
 
 ## Electronics
 
-The PCBs for potentiometers are the same as for the controller I've built for [Conscious Youth.](https://shanteacontrols.com/2018/07/16/conscious-youth-custom-controller/) Main PCB contains MCU, connector for potentiometer boards, connector for touchscreen, power supply (as touchscreen requires +12V) and encoders. Inside the controller there are only few wires, which I'm very pleased with.
+The PCBs for potentiometers are the same as for the controller I've built for [Conscious Youth.](https://shanteacontrols.com/2018/07/16/conscious-youth-custom-controller/) Main PCB contains MCU, connector for potentiometer boards, connector for touchscreen, power supply (as touchscreen requires +12V) and encoders. Inside the controller there are only few wires, which I'm very pleased with.
 
 ![]({{ site.baseurl }}/images/blog/5898d-bergamot_assembly.jpg)
 
@@ -70,7 +64,7 @@ Bergamot is based on [latest version of OpenDeck](https://github.com/shanteacont
 
 ## Demo
 
-Here's demo video of Bergamot controller in action! I'm really happy with - in fact, it could be my first controller on which I haven't felt the urge to change something as soon as I've finished it. That's probably a very good sign. There's also a [longer mix you can check out on my Mixcloud](https://www.mixcloud.com/enigmatik/impressions/) - made using Bergamot, of course.
+Here's demo video of Bergamot controller in action! I'm really happy with - in fact, it could be my first controller on which I haven't felt the urge to change something as soon as I've finished it. That's probably a very good sign. There's also a [longer mix you can check out on my Mixcloud](https://www.mixcloud.com/enigmatik/impressions/) - made using Bergamot, of course.
 
 <div class="videoWrapper">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/O12u3A11dXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

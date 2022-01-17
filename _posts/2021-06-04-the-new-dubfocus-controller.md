@@ -2,11 +2,9 @@
 layout: post
 title: "The new DubFocus controller"
 date: "2021-06-04"
-categories: 
-  - "development"
-  - "info"
 tags: 
   - "dubfocus"
+  - "buildlog"
 image: "193474182_259492185848862_7612030630368761512_n.jpg"
 comments: true
 ---

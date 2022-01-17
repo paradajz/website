@@ -2,10 +2,10 @@
 layout: post
 title: "OpenDeck software v4.0.0 - What's new?"
 date: "2019-06-21"
-categories: 
-  - "development"
-  - "info"
-image: "post_default_header.jpg"
+tags: 
+  - "opendeck"
+  - "programming"
+  - "announce"
 comments: true
 ---
 

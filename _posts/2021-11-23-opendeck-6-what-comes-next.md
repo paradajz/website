@@ -2,11 +2,9 @@
 layout: post
 title: "OpenDeck v6 - what comes next?"
 date: "2021-11-23"
-categories: 
-  - "development"
-  - "info"
 tags: 
   - "opendeck"
+  - "announce"
 image: "cover_opendeck_v6.jpg"
 comments: true
 ---

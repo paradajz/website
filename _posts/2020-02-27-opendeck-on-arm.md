@@ -2,14 +2,10 @@
 layout: post
 title: "OpenDeck on ARM"
 date: "2020-02-27"
-categories: 
-  - "development"
-  - "info"
 tags: 
-  - "arm"
-  - "mega"
   - "opendeck"
   - "stm32"
+  - "announce"
 image: "stm32f4discovery.jpg"
 comments: true
 ---
@@ -72,8 +68,6 @@ Currently, most of the things work on this board:
 - I/O
 
 The only thing I'm missing at the moment is bootloader support which will come in the coming weeks. Other stuff works for now, but I still consider this experimental since it it has undergone limited amount of testing.
-
-\[caption id="attachment\_2695" align="aligncenter" width="900"\]![]
 
 Since I still consider this experimental, there is currently no documentation on OpenDeck wiki on how to flash this board - this will come soon hopefully. Good news is that it's much simpler to flash this board than any other Arduino board simply because this board already has integrated programmer so no external components are needed.
 
