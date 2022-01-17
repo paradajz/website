@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://shanteacontrols.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shanteacontrols.com/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2022-01-17T10:28:21+00:00</updated><id>https://shanteacontrols.com/feed.xml</id><title type="html">Shantea Controls</title><entry><title type="html">OpenDeck v6 - what comes next?</title><link href="https://shanteacontrols.com/2021/11/23/opendeck-6-what-comes-next/" rel="alternate" type="text/html" title="OpenDeck v6 - what comes next?" /><published>2021-11-23T00:00:00+00:00</published><updated>2021-11-23T00:00:00+00:00</updated><id>https://shanteacontrols.com/2021/11/23/opendeck-6-what-comes-next</id><content type="html" xml:base="https://shanteacontrols.com/2021/11/23/opendeck-6-what-comes-next/"><![CDATA[<p>OpenDeck v6 was released a while ago, it’s just that I haven’t written a blog post about it. Let’s correct that.</p>
+
+<h2 id="dmx">DMX</h2>
+
+<p>OpenDeck now supports DMX output through <a href="https://www.openlighting.org/ola/">OLA (Open Lighting Architecture)</a>. OLA implements interface which various lighting software can use (such as <a href="https://qlcplus.org/">QLC+</a>). This is done via additional USB interface which enumerates once the OpenDeck boards are plugged in - serial port. DMX support involves adding some circuitry to the board. This information is available <a href="https://github.com/shanteacontrols/OpenDeck/wiki/Connections#dmx">on the wiki</a>. Once the circuitry is added, the only thing left is to click “Enable DMX” in OpenDeck configurator. Simple as that.</p>
+
+<h2 id="support-for-more-boards">Support for more boards</h2>
+
+<p>OpenDeck now supports more boards than ever. These are the newly added boards on which OpenDeck firmware can be loaded:</p>
+
+<ul>
+  <li><a href="https://www.waveshare.com/core405r.htm">Waveshare Core405R</a></li>
+  <li><a href="https://www.waveshare.com/core407v.htm">Waveshare Core407V</a></li>
+  <li><a href="https://www.waveshare.com/core407i.htm">Waveshare Core407I</a></li>
+  <li><a href="https://stm32-base.org/boards/STM32F407VET6-STM32-F4VE-V2.0">STM32F4VE</a> (<a href="https://www.ebay.com/itm/401956886691?hash=item5d967f58a3:g:fFcAAOSw4fhdy2rk">eBay</a>)</li>
+  <li><a href="http://www.chinalctech.com/m/view.php?aid=338">TPyBoard (PyBoard clone)</a> (<a href="https://www.ebay.com/itm/183887614794?hash=item2ad08e534a:g:bmsAAOSwrSpdLtFM">eBay</a>)</li>
+</ul>
+
+<p>Flashing instructions have been updated for all these boards and also greatly improved for other boards (such as Arduino Mega). Check the docs <a href="https://github.com/shanteacontrols/OpenDeck/wiki/Flashing-the-OpenDeck-firmware">on the wiki</a>.</p>
+
+<h2 id="other-stuff">Other stuff</h2>
+
+<ul>
+  <li>Analog components can now be used to control LED state in local mode. I’ve been asked about this for a while, and now it’s possible due to the major redesign of some components.</li>
+  <li>Program change and preset change LED control modes are now separated. Preset change using MIDI in message has been removed to avoid confusion.</li>
+  <li>Smoother analog readouts due to the improved analog filtering</li>
+  <li>All kinds of minor fixes and improvements</li>
+</ul>
+
+<h1 id="what-next">What next?</h1>
+
+<p>I only have about 10 more OpenDeck boards to sell via Tindie and then I’m out of stock. Due to the various factors, I probably won’t be ordering new batches of boards, which is why there was a great focus on adding support for more boards in the past few months. On top of this, OpenDeck source code is now in a state where I can basically call it finished - as much as I hate to say that since I’ve been doing this for the past 6 years. I just don’t know what else to add to it! It runs on various boards, custom boards can be created by users, it supports all the stuff you’d expect and then some, it has great configurator, I’ve done my best to document the project properly etc. I’m sure I (or someone else) will find some bugs from time to time, which will be fixed, of course. As for the future features - you tell me!</p>]]></content><author><name></name></author><category term="development" /><category term="info" /><category term="opendeck" /><summary type="html"><![CDATA[OpenDeck v6 was released a while ago, it’s just that I haven’t written a blog post about it. Let’s correct that.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://shanteacontrols.com/cover_opendeck_v6.jpg" /><media:content medium="image" url="https://shanteacontrols.com/cover_opendeck_v6.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The new DubFocus controller</title><link href="https://shanteacontrols.com/2021/06/04/the-new-dubfocus-controller/" rel="alternate" type="text/html" title="The new DubFocus controller" /><published>2021-06-04T00:00:00+00:00</published><updated>2021-06-04T00:00:00+00:00</updated><id>https://shanteacontrols.com/2021/06/04/the-new-dubfocus-controller</id><content type="html" xml:base="https://shanteacontrols.com/2021/06/04/the-new-dubfocus-controller/"><![CDATA[<p>After some deliberation, I’ve decided to build few new DubFocus controllers. There are several differences between these and previous models:</p>
+
+<ol>
+  <li>DubFocus 12 became DubFocus 16 in same case – the horizontal spacing between components is now 29mm instead of 40mm.</li>
+  <li>PCBs have been totally redesigned so now, the entire controller is made from 3 large PCBs, connected by two flat cables. There is also one small USB board as before.</li>
+  <li>I am now using STM32F411 Black Pill board as the “brain” of the controller since hand soldering of STM32 MCUs is a major pain.</li>
+  <li>No more holders and holding plate – everything is screwed to Plexiglas plate and then Gravoply plate is screwed on top of that. Before, Plexiglas and Gravoply plates have been glued together. Plexiglas plate is now also thicker since it caries all the electronics on itself (5mm vs. 3mm before).</li>
+  <li>I’ve used metal pots for these builds. No particular reason – I still can’t decide which ones I prefer.</li>
+</ol>
+
+<p>So, without further ado, check the pictures below to see how DubFocus 16C (C = compact) came into life!</p>
+
+<p><img src="/images/blog/172542229_220702589727822_618265503888699395_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/173199660_221392879658793_9034175403378905046_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/174163217_223865929411488_3903818462814472629_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/174633403_224150579383023_3984727542828117320_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/178580180_231869485277799_5282707656067592910_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/180033747_234501895014558_1655514314867501703_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/180321888_234501448347936_1144560035242290225_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/180611525_234501701681244_4111231124521419647_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/183117105_239682507829830_3719657556997011817_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/184056315_242353007562780_9047760974017905916_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/187945877_251376923327055_3222605484840057158_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/188305862_251376619993752_775288677915221130_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/188423488_251376816660399_8975519552491615412_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/188534875_251377606660320_8726075325443042313_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/188690883_251378013326946_8034703593923187815_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/189018428_251377426660338_7769020329510105453_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/191646335_255734162891331_7987082116862482261_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/193474182_259492185848862_7612030630368761512_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/193475565_259492395848841_4401799299658561406_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/193667083_259708545827226_3189400619628564506_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/194179722_259919012472846_6560917822354076836_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/194278674_259918892472858_8013798929619142178_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/194505585_259491659182248_1741719934655752292_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/194555994_259491585848922_5660892228912734232_n.jpg" alt="" /></p>
+
+<p><img src="/images/blog/195514057_259708709160543_493190385348544288_n.jpg" alt="" /></p>]]></content><author><name></name></author><category term="development" /><category term="info" /><category term="dubfocus" /><summary type="html"><![CDATA[After some deliberation, I’ve decided to build few new DubFocus controllers. There are several differences between these and previous models:]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://shanteacontrols.com/193474182_259492185848862_7612030630368761512_n.jpg" /><media:content medium="image" url="https://shanteacontrols.com/193474182_259492185848862_7612030630368761512_n.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Regarding DubFocus</title><link href="https://shanteacontrols.com/2021/03/30/regarding-dubfocus/" rel="alternate" type="text/html" title="Regarding DubFocus" /><published>2021-03-30T00:00:00+00:00</published><updated>2021-03-30T00:00:00+00:00</updated><id>https://shanteacontrols.com/2021/03/30/regarding-dubfocus</id><content type="html" xml:base="https://shanteacontrols.com/2021/03/30/regarding-dubfocus/"><![CDATA[<p>Due to the frequent questions I get about DubFocus, I’ve written this post to clarify some things.</p>
+
+<p>As some of you are already aware, I’ve spent most of 2020 building DubFocus 12 controllers (and one 16ch). This has proved to be very time consuming, mainly due to the way how I designed the electronics and holding system inside the controller. There were also several common points of failure in assembly increasing the already high assembly time even higher. In total, I’ve made 10 of these controllers. During this time, costs were piling up without me even noticing, due to the way I was building these things (basically as soon as I’ve finished one, I started doing another). I’ve gotten into the state of “I just need to order this small thing and one more” for almost a year and then, you put it all on paper and see that you’re losing money. These things happen, but I don’t think anyone sane is willing to lose money on purpose. I certainly am not, so I’ve decided I won’t be building these things anymore.</p>
+
+<p>For several months now, despite this decision, I am constantly being asked for this controller and its price. At some point it starts feeling bad saying “no I don’t build them”. I’ve obviously created something people want, and to be honest I am very proud of that. I’ve even open-sourced entire electronics of this controller and thus enabled the people to build it themselves. I guess most people don’t want to mess with that. Who can blame them? Building an actual product has very little to do with some prototypes on your desk, as people who have actually built a product can attest. Despite being DIY (I am building the controllers in my living room - no workers, no factory), I consider my products professional and I treat them as such. Otherwise, I wouldn’t sell them.</p>
+
+<p>Now, regarding the DubFocus 16: over the past few days I’ve redesigned DubFocus 12 controller into DubFocus 16 - same dimensions, but 16 channels instead. There’s no need to have 40mm of horizontal spacing between components, and when I’ve reduced that I’ve realized 16 channels fit into these dimensions easily. I’ve also redesigned the electronics and the entire assembly so that assembly time is minimal, made a list of every single component I need to buy, calculated all the small extras, taxes, time needed etc. Electronic components cost higher now then they did one year ago and availability is really bad, with waiting times being between several weeks to several months. Chip shortage is very real real in 2021. With all this, DubFocus 16 price turns out to be *drum-roll*:</p>
+
+<p><strong>1200$.</strong></p>
+
+<p>Now, let’s do a comparison…</p>
+
+<ul>
+  <li>Vestax VCM 600 is what many producers use for the kind of setup DubFocus is designed. It came out in 2009 and it cost ~900$. Now, when you account for inflation, if it were to come out in 2021 it would cost ~1100$. This thing has 6 channels. For 1200$, DubFocus has 16. End of comparison.</li>
+  <li>There’s also the beloved Livid DS1, which you can get second hand for 200-300$. It has 8 channels. So you can buy two of them (if you can find them) and have 16 channels. Granted, this is much cheaper than buying DubFocus. However, the Livid is no more so support is out of the window. This might not matter to you but it certainly does to some.</li>
+</ul>
+
+<p>So here I am, comparing myself to *companies*. There’s only me in Shantea Controls. This is also something to consider. I can’t get good deals for parts since I am not buying a truckload of components. This is low volume stuff. If you fail to realize this please don’t contact me.</p>
+
+<p>Now, regarding the actual building of DubFocus, here are the rules:</p>
+
+<ol>
+  <li>I can build 4 for them in the coming months</li>
+  <li>Payment is done 60% in advance</li>
+  <li>Price as already mentioned is 1200$, shipping not included.</li>
+  <li>Build time: in about 3-4 months, not before.</li>
+</ol>
+
+<p>If I get 4 pre-orders for this, I’ll build them. Otherwise, firmware and electronics are available in <a href="https://github.com/shanteacontrols/OpenDeck">OpenDeck repository on GitHub</a>.</p>]]></content><author><name></name></author><category term="info" /><category term="dubfocus" /><summary type="html"><![CDATA[Due to the frequent questions I get about DubFocus, I’ve written this post to clarify some things.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://shanteacontrols.com/166086360_207954164335998_7262799458133236482_n.jpg" /><media:content medium="image" url="https://shanteacontrols.com/166086360_207954164335998_7262799458133236482_n.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">The touchscreen trio</title><link href="https://shanteacontrols.com/2021/02/18/the-touchscreen-trio/" rel="alternate" type="text/html" title="The touchscreen trio" /><published>2021-02-18T00:00:00+00:00</published><updated>2021-02-18T00:00:00+00:00</updated><id>https://shanteacontrols.com/2021/02/18/the-touchscreen-trio</id><content type="html" xml:base="https://shanteacontrols.com/2021/02/18/the-touchscreen-trio/"><![CDATA[<p>About a year ago I’ve started sketching the new controller for myself, since I’ve found myself a bit limited by the Bergamot controller. Eventually, I made three different controllers (or two, depending on how you count).</p>
+
+<h2 id="cardamom">Cardamom</h2>
+
+<p>Cardamom project started out with specs: 16 pots (standard by now), 7 encoders, 2 channel faders and one crossfader and big, 10″ touchscreen display. Reason I wanted such large screen (by contrast, Bergamot has 5″ one) was to avoid juggling between various screen – there’s only so much you can fit on 5″ display. For this I’ve selected the Nextion. The goal with this controller anyways to add official support for touchscreens, so this served as a great testing ground. This was also the very first controller I’ve started working on with STM32 MCU, which is by now in all my controllers as well as in official OpenDeck board. I also wanted something exotic for the wooden case – my go-to wood guy showed me some time back stunning african wood called Padauk. I immediately fell in love with it and decided Cardamom would have it. So, all in all, very experimental controller with lots of unknowns. Below are some pictures of it.</p>
+
+<p><img src="/images/blog/109956535_147772146897016_6430408931493065490_o.jpg" alt="" /></p>
+
+<p><img src="/images/blog/109800995_147773196896911_7581733213845568884_o.jpg" alt="" /></p>
+
+<p><img src="/images/blog/108232583_146912143649683_232275445360695707_o.jpg" alt="" /></p>
+
+<p><img src="/images/blog/107933249_146911963649701_2622829847782104751_o.jpg" alt="" /></p>
+
+<p>As is tradition with my controllers, this one also has reference to teas – the controller is named Cardamom after a spice giving many Ayurvedic teas their spicy taste, and also a source of vitamin B6, which is the chemical on the plate.
+As far as Nextion support is concerned, OpenDeck now supports CDC mode, or more simply, the board can now act as USB to serial device, if you choose to reboot into it from Web UI. This allows you to upload your design to the screen from Nextion GUI without detaching screen from OpenDeck board and then plugging it into FTDI or some other converter. This feature is available on all STM32 based boards.</p>
+
+<div class="videoWrapper">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TPc6ETIsVTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<h2 id="rooibos">Rooibos</h2>
+
+<p>I seriously don’t know what I was thinking when I was designing Cardamom. The thing is huge! Actually it was so large that it wouldn’t fit in my small suitcase, which annoyed me greatly. Otherwise it did everything I wanted it to do. So, I decided to build virtually the same controller, but smaller. This one was named Rooibos. I’ve removed crossfader since I barely even use that, and also there are 5 encoders instead of 7, which is also fine. Touchscreen is also 10″, but this one is made by Viewtech – the same company that produced the screen for Bergamot controller. This was another experiment – I wanted to see how they behave and I also wanted official support for them in OpenDeck firmware. I’m very happy with the screen quality. In my opinion, touch sensitivity is bit better than on Nextion, however, their software tooling leaves a lot to be desired. If you want convenience, go with Nextion. If you want industrial quality and reliability, go with Viewtech (or Stone HMI, their global brand). Anyways, this is my main controller now.</p>
+
+<p><img src="/images/blog/129955349_198098805197683_6067196513235935820_o.jpg" alt="" /></p>
+
+<p><img src="/images/blog/129588734_198100081864222_1509632558569520269_o.jpg" alt="" /></p>
+
+<p><img src="/images/blog/129474055_198111261863104_8315209481913533469_o.jpg" alt="" /></p>
+
+<p>Rooibos is a red bush native to South Africa. Leaves from it are used to make one of my favorite teas with the same name. Perfect for any time of the day since it doesn’t contain theine, so it won’t keep you awake, unlike black and green (and anything made from Camellia Sinensis, really) teas do.</p>
+
+<div class="videoWrapper">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/B4JwPd6Kib4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<h2 id="bergamot">Bergamot</h2>
+
+<p>Having built Rooibos I’ve filled all my controller needs, however, I still had that old Bergamot controller lying around. It irked that it was based on, by now, unsupported hardware (ATmega32u4) and it also had worn-out wooden case, which just wasn’t up to the standard of Padauk (but then again, what is?). So I’ve just rebuilt the whole thing, leaving mostly everything as it. I did change the screen, however. It’s 7″ one from Stone HMI.</p>
+
+<p><img src="/images/blog/138267756_224522002555363_4414520917304436623_o.jpg" alt="" /></p>
+
+<p><img src="/images/blog/138222362_224522509221979_5499731080639708385_o.jpg" alt="" /></p>
+
+<p><img src="/images/blog/138047851_224522602555303_6505723444698743035_o.jpg" alt="" /></p>
+
+<h2 id="xy-support">X/Y support</h2>
+<p>There is one more thing I’ve added to OpenDeck firmware in latest release – the ability to define custom regions on screen to serve as analog components. Defining is done in Web Ui, just like everything else. This could enable some really cool use-cases. Sadly, all I could think of and show off was controlling two effects at the same time in Traktor DJ. Here’s to hoping I get to see more use cases of this!</p>
+
+<div class="videoWrapper">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/K29GrrtvoAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>]]></content><author><name></name></author><summary type="html"><![CDATA[About a year ago I’ve started sketching the new controller for myself, since I’ve found myself a bit limited by the Bergamot controller. Eventually, I made three different controllers (or two, depending on how you count).]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://shanteacontrols.com/touchscreen_trio.jpg" /><media:content medium="image" url="https://shanteacontrols.com/touchscreen_trio.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Support for new hardware</title><link href="https://shanteacontrols.com/2020/11/19/support-for-new-hardware/" rel="alternate" type="text/html" title="Support for new hardware" /><published>2020-11-19T00:00:00+00:00</published><updated>2020-11-19T00:00:00+00:00</updated><id>https://shanteacontrols.com/2020/11/19/support-for-new-hardware</id><content type="html" xml:base="https://shanteacontrols.com/2020/11/19/support-for-new-hardware/"><![CDATA[<p>Latest OpenDeck firmware now supports two new STM32F4 boards, commonly known as “Black Pill” - the one with STM32F401 and STM32F411 MCUs. These are very powerful boards and their MCU is very similar to the one I’m already using for all my new controllers and also new OpenDeck board.</p>
+
+<p><img src="/images/blog/blackpill411.jpg" alt="" /></p>
+
+<p>They are also very cheap (can be found on eBay for ~4$). More information about these boards can he found <a href="https://stm32-base.org/boards/STM32F401CEU6-WeAct-Black-Pill-V3.0">here</a>. These boards are great alternative to small Arduino Micro boards which aren’t supported anymore since OpenDeck cannot fit into its flash memory.</p>
+
+<p>On the Arduino side of things, <a href="http://mayhewlabs.com/products/mux-shield-2">Mux Shield 2</a> is now supported for Arduino Mega. This shield adds 48 analog inputs to Arduino Mega, which should be more than enough for most people (it’s even more than official OpenDeck board!).</p>
+
+<p><img src="/images/blog/mux_shield2.jpg" alt="" /></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Latest OpenDeck firmware now supports two new STM32F4 boards, commonly known as “Black Pill” - the one with STM32F401 and STM32F411 MCUs. These are very powerful boards and their MCU is very similar to the one I’m already using for all my new controllers and also new OpenDeck board.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://shanteacontrols.com/post_default_header.jpg" /><media:content medium="image" url="https://shanteacontrols.com/post_default_header.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">OpenDeck v2 boards now available</title><link href="https://shanteacontrols.com/2020/11/11/opendeck-v2-boards-now-available/" rel="alternate" type="text/html" title="OpenDeck v2 boards now available" /><published>2020-11-11T00:00:00+00:00</published><updated>2020-11-11T00:00:00+00:00</updated><id>https://shanteacontrols.com/2020/11/11/opendeck-v2-boards-now-available</id><content type="html" xml:base="https://shanteacontrols.com/2020/11/11/opendeck-v2-boards-now-available/"><![CDATA[<p>This might be the shortest post I’ve ever written - but fairly important nonetheless. The OpenDeck v2 boards can now be ordered via <a href="https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform/">Tindie</a>! As an reminder, OpenDeck v2 boards bring the the following:</p>
+
+<ul>
+  <li>64 digital inputs for 64 buttons or 32 encoders</li>
+  <li>32 analog inputs which can be used as button inputs as well</li>
+  <li>48 digital outputs for LEDs (with integrated resistors, so no external resistors are required)</li>
+  <li>DIN MIDI in and out</li>
+  <li>Class-compliant USB MIDI which works on any operating system without any drivers</li>
+  <li>Additional UART connector for touchscreens</li>
+  <li>Additional I2C connector for small LCD/OLED displays</li>
+  <li>Additional SPI connector which is currently unused</li>
+  <li>STM32F405 MCU capable of hosting 10 presets</li>
+</ul>
+
+<p>This took longer than expected, but I’m happy that I managed to make them available before the end of this year.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[This might be the shortest post I’ve ever written - but fairly important nonetheless. The OpenDeck v2 boards can now be ordered via Tindie! As an reminder, OpenDeck v2 boards bring the the following:]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://shanteacontrols.com/post_default_header.jpg" /><media:content medium="image" url="https://shanteacontrols.com/post_default_header.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">New firmware, new boards, new controllers</title><link href="https://shanteacontrols.com/2020/10/12/new-firmware-new-boards-new-controllers/" rel="alternate" type="text/html" title="New firmware, new boards, new controllers" /><published>2020-10-12T00:00:00+00:00</published><updated>2020-10-12T00:00:00+00:00</updated><id>https://shanteacontrols.com/2020/10/12/new-firmware-new-boards-new-controllers</id><content type="html" xml:base="https://shanteacontrols.com/2020/10/12/new-firmware-new-boards-new-controllers/"><![CDATA[<p>Due to everything that’s going on right now it feels like ancient history the last time I’ve talked about new OpenDeck firmware. Or new boards. Or new controllers. In fact, I think the past few months have been the busiest months for OpenDeck ever since the project started. If you’re interested on what’s going on with the project, keep reading!</p>
+
+<h2 id="opendeck-firmware-v5">OpenDeck firmware v5</h2>
+
+<p>After more than a year of work, I’ve finally released <a href="https://github.com/shanteacontrols/OpenDeck/releases">new firmware, called v5</a>. This has been almost a total rewrite of the build system, total rewrite of board support subsystem and really, complete refactoring of most of the code to make it even more modular and testable. Which doesn’t mean there aren’t new features - far from it.</p>
+
+<h3 id="official-support-for-stm32">Official support for STM32</h3>
+
+<p>The support for STM32 is now finally stable and official. Not just that, I am now using STM32F405 as my primary MCU for all new designs - including for <a href="https://shanteacontrols.com/2019/08/06/building-dubfocus-controllers/">DubFocus controller.</a> I will talk about the next-gen DubFocus controllers in another post.</p>
+
+<h3 id="new-sysex-protocol">New SysEx protocol</h3>
+
+<p>One of the major limitations of previous firmware releases was the SysEx protocol. As with other MIDI messages, SysEx bytes are limited to maximum value of 127. This means that with my old protocol, you couldn’t configure more than 128 components per block. For instance, in OpenDeck firmware, every analog input can be configured as button, which is why the interface presents total number of buttons as sum of physical digital inputs and analog inputs. If the board, for example, had 64 digital inputs and 80 analog inputs, that’s total of 144 buttons to configure. With old protocol, there was no way to configure any component with index larger than 127. This also meant that you couldn’t configure NRPN index or pitch bend ranges without introducing ugly hacks in the interface - both NRPN index and pitch bend range can have upper value of 16383. So, how do you configure this with my protocol? To solve this I’ve introduced ugly hack in the interface so the interface was showing LSB and MSB parameters - lower and upper byte, respectively. You had to do some mental gymnastics in order to configure this in the right way.</p>
+
+<p>I’ve actually designed SysEx protocol with this in mind - there was an option to use it in a way described above, or, it could work in two-byte mode: in this mode, each parameter index and its value were represented by two bytes. This gives the ability to use 14-bit ranges instead of measly 7-bit ones. There was a caveat, though: the web interface was designed only with one-byte protocol in mind, and it was no longer possible to add the support for it since the code has been obfuscated and the original developer moved on to other things. The solution here was to completely redesign the interface. More on this later, but long story short: OpenDeck v5 now uses two-byte protocol by default. The entire protocol is documented in the <a href="https://github.com/shanteacontrols/OpenDeck/wiki/SysEx-Configuration">OpenDeck wiki</a>.</p>
+
+<h3 id="midi-bootloader">MIDI bootloader</h3>
+
+<p>There’s nothing that normal people like better than to open terminal to update the firmware on their devices. I’m kidding, of course. Each time I was asked for help on how to update the firmware on the OpenDeck boards, I shook my head, took a deep breath, stretched my fingers and started typing something along these words: “Well, first you need to open terminal and type the following…”.</p>
+
+<p>I hated it. Here I was, explaining to users, that in order to update their supposedly simple to use board they need to launch terminal to update it. That irked me for very long until I came up with very obvious solution: why wouldn’t I reuse the same USB MIDI stack I already use and make the bootloader show up as just another MIDI device? Users would update it with special SysEx file. I couldn’t find anything similar anywhere else so I had to do this from scratch. I do remember reading somewhere about someone trying out something similar but it supposedly didn’t work for some reason. I decided to try it anyways since, if it would work, that would be a giant step forward for the project and its ease of use. This turned out to be more complex that I hoped, but eventually I’ve managed to make it work.</p>
+
+<p>The biggest part of making this work was to actually convert the compiled binary to normal SysEx messages. I did this with <a href="https://github.com/shanteacontrols/OpenDeck/blob/e3b88457fbd712ee6348f3dab65e7f213690442f/scripts/sysex_fw_create.sh">bash script</a>. The script reads binary file byte by byte and converts that byte into two bytes in SysEx format. If you’re wondering why two bytes, well, byte range is 0-255, and as I’ve explained above, SysEx byte can only have range 0-127. The script also adds some more messages with headers and metadata, but this is basically it. The <a href="https://github.com/shanteacontrols/OpenDeck/tree/master/src/bootloader">bootloader</a> on the board parses this file and updates the firmware.</p>
+
+<p>No more terminal! Bonus: firmware update is now possible within web configurator.</p>
+
+<h3 id="touchscreen-support">Touchscreen support</h3>
+
+<p>Two years ago I’ve build <a href="https://shanteacontrols.com/2018/10/14/bergamot-touchscreen-midi-controller/">Bergamot</a> - a controller based on a touchscreen. The code was a bit specific for that particular controller and for that particular screen, but now, there’s official support for every single <a href="https://nextion.tech/">Nextion</a> touchscreen in OpenDeck firmware! Not only that, <a href="http://www.stone-hmi.com/">Stone HMI</a> screens are supported as well. Currently, the firmware supports touchscreen buttons and touchscreen icons. These icons are, as far as user and firmware are concerned - just normal LEDs. Icon configuration is actually LED configuration, so every option available right now for LEDs is available for touchsreen icons as well - blinking, MIDI in control, local control etc. Same thing goes for buttons - buttons are also configured just like normal physical buttons. There’s detailed guide on how to configure touchscreens in the <a href="https://github.com/shanteacontrols/OpenDeck/wiki/Configuring-touchscreens">wiki</a>.</p>
+
+<p>I’ve also built myself a brand new controller which features 10” Nextion display called Cardamom.</p>
+
+<p><img src="/images/blog/109956535_147772146897016_6430408931493065490_o.jpg" alt="" /></p>
+
+<p><img src="/images/blog/109800995_147773196896911_7581733213845568884_o.jpg" alt="" /></p>
+
+<p><img src="/images/blog/108232583_146912143649683_232275445360695707_o.jpg" alt="" /></p>
+
+<p>The stunning red wood is african Padouk. The controller is also based on STM32F405 MCU, the one I am now using for all new designs. I don’t think I’ve ever spent more time and resources on a controller than on this one - one way or another I’ve been building it for more than a year.</p>
+
+<p>I’ve also recorded a video of me mixing on this controller.</p>
+
+<div class="videoWrapper">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TPc6ETIsVTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</div>
+
+<h3 id="sysex-programmer">SysEx programmer</h3>
+
+<p>I’ve been asked this question a lot - how do I use OpenDeck board as SysEx programmer? The answer was, unfortunately, you can’t. <a href="https://www.youtube.com/watch?v=6FwmGLzyRDk">Well, well, well, how the turntables</a>! There is now ability to do just that. Transform your OpenDeck board into SysEx programmer with single toggle in the web interface.</p>
+
+<h3 id="new-ui">New UI</h3>
+
+<p>UI has been totally rewritten and redesigned by <a href="https://github.com/wyrd-code">Tomislav Glavas</a>. If you’re looking for WebMIDI expert, well, here’s brand new one. ;) I’ll let the screenshots below do the talking.</p>
+
+<p><img src="/images/blog/new_webui_13.png" alt="" /></p>
+
+<p><img src="/images/new_webui_12.png" alt="" /></p>
+
+<p><img src="/images/new_webui_11.png" alt="" /></p>
+
+<p><img src="/images/blog/new_webui_10.png" alt="" /></p>
+
+<p><img src="/images/new_webui_09.png" alt="" /></p>
+
+<p><img src="/images/blog/new_webui_08.png" alt="" /></p>
+
+<p><img src="/images/blog/new_webui_07.png" alt="" /></p>
+
+<p><img src="/images/blog/new_webui_06.png" alt="" /></p>
+
+<p><img src="/images/blog/new_webui_05.png" alt="" /></p>
+
+<p><img src="/images/blog/new_webui_04.png" alt="" /></p>
+
+<p><img src="/images/blog/new_webui_03.png" alt="" /></p>
+
+<p><img src="/images/blog/new_webui_02.png" alt="" /></p>
+
+<p><img src="/images/blog/new_webui_01.png" alt="" /></p>
+
+<p>New UI supports both the old and new SysEx protocol, it supports column view so that it’s easy to see all options for specific block at once, it supports firmware updates, backup and restore, activity log is showing much more detailed info than the old one, there’s more helpful information for available options now, the UI doesn’t crash if some parameters aren’t supported etc. I think it’s really phenomenal - Tomislav did <a href="https://www.youtube.com/watch?v=hQRv0qM_5rQ">great job</a> here, and more than that, did some things I didn’t even ask for which improved the entire application. We both have same mindset regarding the things we build so the entire collaboration went really smoothly. Oh, the entire thing is also <a href="https://github.com/shanteacontrols/OpenDeckUI">open-source</a>.</p>
+
+<p>Another great thing about the UI is that it separates buttons into physical, analog inputs and touchscreen buttons. UI does the same thing for LEDs - section is separated into physical LEDs and touchscreen icons / LEDs.</p>
+
+<h3 id="other-things">Other things</h3>
+
+<p>There is also a new ability which allows users to configure the button to send different velocity on each successive press in any desired step. Also, the firmware now supports full backup and restore - something which never worked right in previous firmware.</p>
+
+<p>Sadly, there are some bad news as well - due to large amount of new features, OpenDeck no longer supports ATmega328P and ATmega32u4 - so boards like Arduino Uno, Arduino Leonardo, Arduino Pro Micro etc. aren’t supported anymore as a result of this. This is not an arbitrary decision - the firmware simply doesn’t fit anymore into the flash memory of this boards. However, last <a href="https://github.com/shanteacontrols/OpenDeck/releases/tag/v4.1.3">v4</a> firmware release can still be loaded on these boards and will work just fine.</p>
+
+<p>New build system which allows defining of custom board variants is also part of this release. I’ve written about this in the <a href="https://shanteacontrols.com/2020/06/11/creating-custom-opendeck-board-variants/">previous post</a>.</p>
+
+<h3 id="new-boards">New boards</h3>
+
+<p><img src="/images/blog/IMG_3141_web.jpg" alt="" /></p>
+
+<p><img src="/images/blog/IMG_3135_web.jpg" alt="" /></p>
+
+<p>Lastly, I want to talk about new boards. Some really good news here - new boards are in production as I type this post! The OpenDeck v2 board features STM32F405 MCU, has support for 10 presets, has support for touchscreens, OLED displays and also the ability to work with I2C and SPI sensors in the future (there are connectors present on board) and other than that, it has same amount of I/O as the v1 board. Dimensions are the same, as well as the pinouts - with one change regarding the analog inputs - there are now both ground and power supply pins for each of 32 analog inputs.</p>
+
+<p>New boards will be available on <a href="https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform/">Tindie</a> in few weeks at the same price as old board.</p>]]></content><author><name></name></author><category term="development" /><category term="info" /><category term="opendeck" /><summary type="html"><![CDATA[Due to everything that’s going on right now it feels like ancient history the last time I’ve talked about new OpenDeck firmware. Or new boards. Or new controllers. In fact, I think the past few months have been the busiest months for OpenDeck ever since the project started. If you’re interested on what’s going on with the project, keep reading!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://shanteacontrols.com/IMG_3135_web.jpg" /><media:content medium="image" url="https://shanteacontrols.com/IMG_3135_web.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Creating custom OpenDeck board variants</title><link href="https://shanteacontrols.com/2020/06/11/creating-custom-opendeck-board-variants/" rel="alternate" type="text/html" title="Creating custom OpenDeck board variants" /><published>2020-06-11T00:00:00+00:00</published><updated>2020-06-11T00:00:00+00:00</updated><id>https://shanteacontrols.com/2020/06/11/creating-custom-opendeck-board-variants</id><content type="html" xml:base="https://shanteacontrols.com/2020/06/11/creating-custom-opendeck-board-variants/"><![CDATA[<p>One of the questions I get asked a lot is: “How do I create my own custom board which uses OpenDeck firmware?”. There was never really a stable way of doing that - just in the last year alone I’ve changed the way new targets/variants are added at least 3 times, each time a bit simpler, so it would make no sense for me to offer detailed answer to that question either here or on the <a href="https://github.com/shanteacontrols/OpenDeck/wiki">OpenDeck wiki</a> - it would get completely changed soon after that anyways.  Obviously, what I needed was stable interface of defining variant which wouldn’t depend on copying the source files to some directory or modifying the build system. No, I needed something very simple and very generic, defined in one file if possible. Well, good news, everyone! There’s now a way of doing exactly that.</p>
+
+<p>During the last few weeks, I’ve completely revamped the build system. Board variants aren’t discovered anymore by build system looking for some specific source files in specific directories - instead, <a href="https://github.com/shanteacontrols/OpenDeck/tree/master/targets">single YAML file</a> is used to describe the entire board variant. Below is an example of <a href="https://shanteacontrols.com/2019/08/06/building-dubfocus-controllers/">DubFocus</a> board configuration, which uses 4 analog multiplexers, 2 input shift registers and 2 output shift registers:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+  arch: "avr"
+  mcuFamily: "avr8"
+  mcu: "atmega32u4"
+  usb: true
+  dinMIDI:
+    use: false
+  display:
+    use: false
+  touchscreen:
+    use: false
+  buttons:
+    type: "shiftRegister"
+    shiftRegisters: 2
+    pins:
+      data:
+        port: "D"
+        index: 3
+      clock:
+        port: "D"
+        index: 4
+      latch:
+        port: "D"
+        index: 5
+  analog:
+    extReference: true
+    type: "4067"
+    multiplexers: 4
+    pins:
+      s0:
+        port: "B"
+        index: 3
+      s1:
+        port: "B"
+        index: 1
+      s2:
+        port: "E"
+        index: 6
+      s3:
+        port: "B"
+        index: 2
+      z0:
+        port: "F"
+        index: 7
+      z1:
+        port: "F"
+        index: 6
+      z2:
+        port: "F"
+        index: 5
+      z3:
+        port: "F"
+        index: 4
+  leds:
+    internal:
+      present: false
+    external:
+      type: "shiftRegister"
+      shiftRegisters: 2
+      invert: true
+      pins:
+        data:
+          port: "D"
+          index: 2
+        clock:
+          port: "D"
+          index: 0
+        latch:
+          port: "D"
+          index: 1
+        enable:
+          port: "C"
+          index: 7
+  usbLink:
+    type: "none"
+  bootloader:
+    use: true
+    buttonIndex: 12
+  release: true
+  test: true
+</code></pre></div></div>
+
+<p>Build system parses this file, adds needed defines for compiler and additional script generates source code with pins. Very simple - parsing process is done automatically by build system so other than to define configuration in YAML file, there is nothing else to do for user. Complete guide on how to define your own board variant is now <a href="https://github.com/shanteacontrols/OpenDeck/wiki/Creating-custom-board-variant">available on OpenDeck wiki</a>.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[One of the questions I get asked a lot is: “How do I create my own custom board which uses OpenDeck firmware?”. There was never really a stable way of doing that - just in the last year alone I’ve changed the way new targets/variants are added at least 3 times, each time a bit simpler, so it would make no sense for me to offer detailed answer to that question either here or on the OpenDeck wiki - it would get completely changed soon after that anyways.  Obviously, what I needed was stable interface of defining variant which wouldn’t depend on copying the source files to some directory or modifying the build system. No, I needed something very simple and very generic, defined in one file if possible. Well, good news, everyone! There’s now a way of doing exactly that.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://shanteacontrols.com/post_default_header.jpg" /><media:content medium="image" url="https://shanteacontrols.com/post_default_header.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">OpenDeck on ARM</title><link href="https://shanteacontrols.com/2020/02/27/opendeck-on-arm/" rel="alternate" type="text/html" title="OpenDeck on ARM" /><published>2020-02-27T00:00:00+00:00</published><updated>2020-02-27T00:00:00+00:00</updated><id>https://shanteacontrols.com/2020/02/27/opendeck-on-arm</id><content type="html" xml:base="https://shanteacontrols.com/2020/02/27/opendeck-on-arm/"><![CDATA[<p>A little over two years ago, I’ve announced that <a href="https://shanteacontrols.com/2017/12/14/opendeck-on-arduino/">OpenDeck firmware started supporting various Arduino boards</a>. It was a major milestone - the firmware design was modular enough that it could support various targets instead of just official OpenDeck board. Now, it’s time to announce another major milestone: OpenDeck can now run on 32-bit STM32 microcontrollers!</p>
+
+<h2 id="rationale">Rationale</h2>
+
+<p>You might be wondering why OpenDeck needs to support ARM when everything works fine as is. Perhaps ironically, over the last few months the target with which I had the most issues supporting it was my own official OpenDeck board. That board is based on ATmega32u4 AVR microcontroller. Let’s get over the specs of that particular MCU:</p>
+
+<ul>
+  <li>8-bit architecture</li>
+  <li>16MHz</li>
+  <li>32KB flash program memory</li>
+  <li>2.5KB SRAM</li>
+  <li>1KB EEPROM</li>
+  <li>10-bit A/D-converter</li>
+  <li>USB 2.0</li>
+</ul>
+
+<p>Its specs are quite poor, however, it was a good choice when I first started developing OpenDeck, since Arduino Leonardo used that same MCU, and I was using Arduino Leonardo for prototyping. Over the time, as the amount of OpenDeck features grew, the memory requirements also grew. I’ve managed to mitigate this by writing more compact code when possible and by enabling more and more compiler optimizations. With each optimization, I bought myself some more memory and more time until I couldn’t optimize the code anymore so that it could fit inside the MCU. Here are the results when building the firmware I’ve released today for OpenDeck board:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AVR Memory Usage
+----------------
+Device: atmega32u4
+
+Program: 28392 bytes (86.6% Full)
+(.text + .data + .bootloader)
+
+Data: 2326 bytes (90.9% Full)
+(.data + .bss + .noinit)
+</code></pre></div></div>
+
+<p>Program usage is a bit misleading, though, since 4kB of flash is reserved for bootloader, which brings the total memory usage to 99%. I’ve only got 280 bytes left which means it has become impossible to add any more features to the official board. On top of this, ATmega32u4 only has 1kB of EEPROM memory, which means I cannot support presets on official board since the current configuration takes almost the entire EEPROM as well.</p>
+
+<h2 id="solution">Solution</h2>
+
+<p>I could’ve solved most of these issues simply by making new OpenDeck board with another beefier AVR MCU, such as AT90USB1286. That MCU has 128kB of flash, 8kB of RAM and 4kB of EEPROM. Even though I could get along with 128kB of flash and 8kB of RAM, this MCU still has same 8-bit architecture, runs on same 16 MHz clock so it has fairly limited processing power and limited EEPROM. I don’t really need more processing power right now, but I might in the future. There’s also the issue of pricing (this thing costs about 7$) and with AVR loosing on all fronts compared to vastly more powerful ARM MCUs, it is a question for how long these MCUs are going to be available. I want my next flagship board to be based on something I can count on for the next decade. It’s still probably going to be around by then, however, OpenDeck firmware might eat the resources of that MCU as well. Therefore, the only logical choice was to move to something powerful enough that I won’t need to worry about resources for a very long time. I had some prior experience with STM32 line from ST so I’ve picked STM32F4 Discovery board to be the first supported OpenDeck target.</p>
+
+<p><img src="/images/blog/stm32f4discovery.jpg" alt="" /></p>
+
+<p>This particular board has STM32F407VG MCU with the following specs:</p>
+
+<ul>
+  <li>32 bit architecture</li>
+  <li>168MHz clock</li>
+  <li>1MB of flash</li>
+  <li>192kB of RAM</li>
+  <li>12-bit ADC</li>
+  <li>USB</li>
+  <li>Loads of peripherals</li>
+</ul>
+
+<p>Even though most modern ARM MCUs don’t have EEPROM, it can be simulated using flash memory. Because of this, I have currently dedicated 16kB of flash to virtual EEPROM on this MCU, which means that I can support many presets.</p>
+
+<p>Compared to even the most powerful AVR, this thing is a beast. The great thing about this board is that it also features on-board programmer/debugger so it’s really easy to develop on. This entire board is fairly cheap as well - less than 20$.</p>
+
+<p>Currently, most of the things work on this board:</p>
+
+<ul>
+  <li>USB MIDI</li>
+  <li>Virtual EEPROM</li>
+  <li>Configuration via web interface</li>
+  <li>I/O</li>
+</ul>
+
+<p>The only thing I’m missing at the moment is bootloader support which will come in the coming weeks. Other stuff works for now, but I still consider this experimental since it it has undergone limited amount of testing.</p>
+
+<p>[caption id=”attachment_2695” align=”aligncenter” width=”900”]![]</p>
+
+<p>Since I still consider this experimental, there is currently no documentation on OpenDeck wiki on how to flash this board - this will come soon hopefully. Good news is that it’s much simpler to flash this board than any other Arduino board simply because this board already has integrated programmer so no external components are needed.</p>
+
+<h2 id="the-future">The future</h2>
+
+<p>Later this year I am planning on releasing OpenDeck board v2 which will feature STM32F405 MCU. It will come most likely some time after summer. It will feature exactly the same amount of inputs and outputs as the current board. It will also have exactly the same dimensions. I have also managed to include some more stuff on it:</p>
+
+<ul>
+  <li>I2C connector</li>
+  <li>SPI connector</li>
+  <li>Additional UART connector</li>
+</ul>
+
+<p>I want this board to support many peripherals which is why I have included these connectors.</p>
+
+<p>Every other supported board variant will be still supported, but the firmware for current OpenDeck board won’t receive any new features (other than the bug fixes) since I simply have no more memory to use as mentioned above. I am also planning on releasing OpenDeck Mega, which will have support for at least:</p>
+
+<ul>
+  <li>128 buttons</li>
+  <li>128 LEDs</li>
+  <li>64 analog components</li>
+  <li>Dual DIN MIDI connectors</li>
+  <li>Probably some more stuff</li>
+</ul>
+
+<p>If anyone has some suggestions for Mega board, let me know! I get loads of requests asking for board which supports many components, so OpenDeck Mega will be the long awaited answer to that.</p>]]></content><author><name></name></author><category term="development" /><category term="info" /><category term="arm" /><category term="mega" /><category term="opendeck" /><category term="stm32" /><summary type="html"><![CDATA[A little over two years ago, I’ve announced that OpenDeck firmware started supporting various Arduino boards. It was a major milestone - the firmware design was modular enough that it could support various targets instead of just official OpenDeck board. Now, it’s time to announce another major milestone: OpenDeck can now run on 32-bit STM32 microcontrollers!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://shanteacontrols.com/stm32f4discovery.jpg" /><media:content medium="image" url="https://shanteacontrols.com/stm32f4discovery.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Looking for a Web developer</title><link href="https://shanteacontrols.com/2020/02/16/looking-for-a-web-developer/" rel="alternate" type="text/html" title="Looking for a Web developer" /><published>2020-02-16T00:00:00+00:00</published><updated>2020-02-16T00:00:00+00:00</updated><id>https://shanteacontrols.com/2020/02/16/looking-for-a-web-developer</id><content type="html" xml:base="https://shanteacontrols.com/2020/02/16/looking-for-a-web-developer/"><![CDATA[<p>Web configurator is among the most loved features of OpenDeck. It’s basically its selling point. Without it, OpenDeck would be just another open-source project where you need to mess with low level stuff like sending and receiving raw SysEx bytes. Configurator makes the configuration easy, and most importantly, low level details become invisible. In my opinion, great technology should always be invisible.</p>
+
+<p>Unfortunately, the UI has some drawbacks. Since the time it was introduced, several major shortcomings have become visible, such as:</p>
+
+<ol>
+  <li>There’s no way for the user to update the firmware directly from the interface - instead, users need to launch shell scripts (terminal!) to update to the latest firmware.</li>
+  <li>User interface cannot handle errors and missing features on board gracefully - when I add new configurable feature to the interface and the currently plugged in board doesn’t have that feature, entire screen on the interface crashes.</li>
+  <li>User interface doesn’t support 2-byte variant of the configuration protocol - translated, this means that the interface supports only up to 127 components per block (max 127 buttons, max 127 encoders etc.) even though my protocol supports this from the very first version. In the near future, I want to build OpenDeck Mega board, which would feature 256 button connections (among other things) so that would be impossible to configure using the UI in its current form.</li>
+  <li>Core UI code is a mess. This has happened because the original source code was lost, and the version that was uploaded to the server was run through obsfucator.</li>
+  <li>I am not a web developer so I can’t fix any of this (UI code was written by another developer).</li>
+</ol>
+
+<p>If you think you have what it takes to build a new version of the configurator, let me know! Of course, I am not expecting anyone to do this for free (might be obvious, but doesn’t hurt to mention it). The current source code is available in <a href="https://github.com/shanteacontrols/OpenDeck/tree/master/webui">OpenDeck repository on GitHub</a>.</p>]]></content><author><name></name></author><category term="development" /><category term="info" /><category term="opendeck" /><category term="webui" /><summary type="html"><![CDATA[Web configurator is among the most loved features of OpenDeck. It’s basically its selling point. Without it, OpenDeck would be just another open-source project where you need to mess with low level stuff like sending and receiving raw SysEx bytes. Configurator makes the configuration easy, and most importantly, low level details become invisible. In my opinion, great technology should always be invisible.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://shanteacontrols.com/webui-9.png" /><media:content medium="image" url="https://shanteacontrols.com/webui-9.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
