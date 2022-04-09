@@ -336,6 +336,12 @@ boards:
 - title: Waveshare Core405V
   image: ws407v.jpg
 
+- title: Adafruit ItsyBitsy nRF52840 Express
+  image: itsybitsy52840.jpg
+
+- title: Nordic Semiconductor nRF52840DK
+  image: nRF52840_dk.jpg
+
 #####################################
 ##########  Core Features  ##########
 #####################################
