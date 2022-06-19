@@ -301,6 +301,18 @@ portfolio:
   categories: [User made]
   image: morten.jpg
 
+- title: Built by reelex
+  categories: [User made]
+  image: reelex-32-buttons.jpg
+
+- title: Built by reelex
+  categories: [User made]
+  image: reelex-64-pots.jpg
+
+- title: Built by n3wkular
+  categories: [User made]
+  image: n3wkular.jpg
+
 boards-title: Supported boards
 boards-description: Not only does the firmware run on official board, it also supports Arduino Mega, STM32F4 Black Pill and many other boards. Still feeling limited? Firmware supports defining your own board variants as well.
 
