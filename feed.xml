@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://shanteacontrols.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shanteacontrols.com/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2022-06-19T11:16:58+00:00</updated><id>https://shanteacontrols.com/feed.xml</id><title type="html">Shantea Controls</title><entry><title type="html">OpenDeck v7</title><link href="https://shanteacontrols.com/2022/04/09/opendeck-7/" rel="alternate" type="text/html" title="OpenDeck v7" /><published>2022-04-09T00:00:00+00:00</published><updated>2022-04-09T00:00:00+00:00</updated><id>https://shanteacontrols.com/2022/04/09/opendeck-7</id><content type="html" xml:base="https://shanteacontrols.com/2022/04/09/opendeck-7/"><![CDATA[<p>Even though last post made it sound like the development of the OpenDeck platform is stopping, that was not the case. In the meantime I’ve found few more areas I’d like to explore. One of them is Bluetooth MIDI and that was the focus of latest OpenDeck release, <a href="https://github.com/shanteacontrols/OpenDeck/releases/tag/v7.1.0">v7.1.0</a>.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://shanteacontrols.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shanteacontrols.com/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2022-06-20T16:10:42+00:00</updated><id>https://shanteacontrols.com/feed.xml</id><title type="html">Shantea Controls</title><entry><title type="html">OpenDeck boards v3 now available</title><link href="https://shanteacontrols.com/2022/06/20/opendeck-boards-v3-available-now/" rel="alternate" type="text/html" title="OpenDeck boards v3 now available" /><published>2022-06-20T00:00:00+00:00</published><updated>2022-06-20T00:00:00+00:00</updated><id>https://shanteacontrols.com/2022/06/20/opendeck-boards-v3-available-now</id><content type="html" xml:base="https://shanteacontrols.com/2022/06/20/opendeck-boards-v3-available-now/"><![CDATA[<p>The wait is over - new boards are available now on <a href="https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform-v3/">Tindie</a>!</p>
+
+<p>To recap, here are the features:</p>
+
+<ul>
+  <li>128 digital inputs</li>
+  <li>64 digital outputs</li>
+  <li>64 analog inputs</li>
+  <li>DIN MIDI</li>
+  <li>USB MIDI</li>
+  <li>DMX</li>
+  <li>Bluetooth on Arduino variant</li>
+</ul>
+
+<p>Price for Black Pill variant is $165, and $175 for Arduino variant. The only difference is Bluetooth support on Arduino variant, and few more presets (since nRF52840 used on Arduino has more flash memory). The boards are being sold without headers, and DIN MIDI connectors are optionally available.</p>]]></content><author><name></name></author><category term="opendeck" /><category term="announce" /><summary type="html"><![CDATA[The wait is over - new boards are available now on Tindie!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://shanteacontrols.com/od3/5.png" /><media:content medium="image" url="https://shanteacontrols.com/od3/5.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">OpenDeck v7</title><link href="https://shanteacontrols.com/2022/04/09/opendeck-7/" rel="alternate" type="text/html" title="OpenDeck v7" /><published>2022-04-09T00:00:00+00:00</published><updated>2022-04-09T00:00:00+00:00</updated><id>https://shanteacontrols.com/2022/04/09/opendeck-7</id><content type="html" xml:base="https://shanteacontrols.com/2022/04/09/opendeck-7/"><![CDATA[<p>Even though last post made it sound like the development of the OpenDeck platform is stopping, that was not the case. In the meantime I’ve found few more areas I’d like to explore. One of them is Bluetooth MIDI and that was the focus of latest OpenDeck release, <a href="https://github.com/shanteacontrols/OpenDeck/releases/tag/v7.1.0">v7.1.0</a>.</p>
 
 <p>BLE MIDI is now supported on the following boards:</p>
 
@@ -357,90 +371,4 @@ As far as Nextion support is concerned, OpenDeck now supports CDC mode, or more 
 
 <p>Lastly, I want to talk about new boards. Some really good news here - new boards are in production as I type this post! The OpenDeck v2 board features STM32F405 MCU, has support for 10 presets, has support for touchscreens, OLED displays and also the ability to work with I2C and SPI sensors in the future (there are connectors present on board) and other than that, it has same amount of I/O as the v1 board. Dimensions are the same, as well as the pinouts - with one change regarding the analog inputs - there are now both ground and power supply pins for each of 32 analog inputs.</p>
 
-<p>New boards will be available on <a href="https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform/">Tindie</a> in few weeks at the same price as old board.</p>]]></content><author><name></name></author><category term="opendeck" /><category term="announce" /><summary type="html"><![CDATA[Due to everything that’s going on right now it feels like ancient history the last time I’ve talked about new OpenDeck firmware. Or new boards. Or new controllers. In fact, I think the past few months have been the busiest months for OpenDeck ever since the project started. If you’re interested on what’s going on with the project, keep reading!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://shanteacontrols.com/IMG_3135_web.jpg" /><media:content medium="image" url="https://shanteacontrols.com/IMG_3135_web.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Creating custom OpenDeck board variants</title><link href="https://shanteacontrols.com/2020/06/11/creating-custom-opendeck-board-variants/" rel="alternate" type="text/html" title="Creating custom OpenDeck board variants" /><published>2020-06-11T00:00:00+00:00</published><updated>2020-06-11T00:00:00+00:00</updated><id>https://shanteacontrols.com/2020/06/11/creating-custom-opendeck-board-variants</id><content type="html" xml:base="https://shanteacontrols.com/2020/06/11/creating-custom-opendeck-board-variants/"><![CDATA[<p>One of the questions I get asked a lot is: “How do I create my own custom board which uses OpenDeck firmware?”. There was never really a stable way of doing that - just in the last year alone I’ve changed the way new targets/variants are added at least 3 times, each time a bit simpler, so it would make no sense for me to offer detailed answer to that question either here or on the <a href="https://github.com/shanteacontrols/OpenDeck/wiki">OpenDeck wiki</a> - it would get completely changed soon after that anyways.  Obviously, what I needed was stable interface of defining variant which wouldn’t depend on copying the source files to some directory or modifying the build system. No, I needed something very simple and very generic, defined in one file if possible. Well, good news, everyone! There’s now a way of doing exactly that.</p>
-
-<p>During the last few weeks, I’ve completely revamped the build system. Board variants aren’t discovered anymore by build system looking for some specific source files in specific directories - instead, <a href="https://github.com/shanteacontrols/OpenDeck/tree/master/targets">single YAML file</a> is used to describe the entire board variant. Below is an example of <a href="https://shanteacontrols.com/2019/08/06/building-dubfocus-controllers/">DubFocus</a> board configuration, which uses 4 analog multiplexers, 2 input shift registers and 2 output shift registers:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-  arch: "avr"
-  mcuFamily: "avr8"
-  mcu: "atmega32u4"
-  usb: true
-  dinMIDI:
-    use: false
-  display:
-    use: false
-  touchscreen:
-    use: false
-  buttons:
-    type: "shiftRegister"
-    shiftRegisters: 2
-    pins:
-      data:
-        port: "D"
-        index: 3
-      clock:
-        port: "D"
-        index: 4
-      latch:
-        port: "D"
-        index: 5
-  analog:
-    extReference: true
-    type: "4067"
-    multiplexers: 4
-    pins:
-      s0:
-        port: "B"
-        index: 3
-      s1:
-        port: "B"
-        index: 1
-      s2:
-        port: "E"
-        index: 6
-      s3:
-        port: "B"
-        index: 2
-      z0:
-        port: "F"
-        index: 7
-      z1:
-        port: "F"
-        index: 6
-      z2:
-        port: "F"
-        index: 5
-      z3:
-        port: "F"
-        index: 4
-  leds:
-    internal:
-      present: false
-    external:
-      type: "shiftRegister"
-      shiftRegisters: 2
-      invert: true
-      pins:
-        data:
-          port: "D"
-          index: 2
-        clock:
-          port: "D"
-          index: 0
-        latch:
-          port: "D"
-          index: 1
-        enable:
-          port: "C"
-          index: 7
-  usbLink:
-    type: "none"
-  bootloader:
-    use: true
-    buttonIndex: 12
-  release: true
-  test: true
-</code></pre></div></div>
-
-<p>Build system parses this file, adds needed defines for compiler and additional script generates source code with pins. Very simple - parsing process is done automatically by build system so other than to define configuration in YAML file, there is nothing else to do for user. Complete guide on how to define your own board variant is now <a href="https://github.com/shanteacontrols/OpenDeck/wiki/Creating-custom-board-variant">available on OpenDeck wiki</a>.</p>]]></content><author><name></name></author><category term="opendeck" /><category term="announce" /><category term="programming" /><summary type="html"><![CDATA[One of the questions I get asked a lot is: “How do I create my own custom board which uses OpenDeck firmware?”. There was never really a stable way of doing that - just in the last year alone I’ve changed the way new targets/variants are added at least 3 times, each time a bit simpler, so it would make no sense for me to offer detailed answer to that question either here or on the OpenDeck wiki - it would get completely changed soon after that anyways. Obviously, what I needed was stable interface of defining variant which wouldn’t depend on copying the source files to some directory or modifying the build system. No, I needed something very simple and very generic, defined in one file if possible. Well, good news, everyone! There’s now a way of doing exactly that.]]></summary></entry></feed>
+<p>New boards will be available on <a href="https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform/">Tindie</a> in few weeks at the same price as old board.</p>]]></content><author><name></name></author><category term="opendeck" /><category term="announce" /><summary type="html"><![CDATA[Due to everything that’s going on right now it feels like ancient history the last time I’ve talked about new OpenDeck firmware. Or new boards. Or new controllers. In fact, I think the past few months have been the busiest months for OpenDeck ever since the project started. If you’re interested on what’s going on with the project, keep reading!]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://shanteacontrols.com/IMG_3135_web.jpg" /><media:content medium="image" url="https://shanteacontrols.com/IMG_3135_web.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
