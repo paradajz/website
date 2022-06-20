@@ -94,8 +94,8 @@ blog-desc: Shantea Controls Blog
 
 # Focus Buttons
 header-focus-button:
-  title: Sold out!
-  url: https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform/
+  title: Buy now
+  url: https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform-v3/
 
 # Secondary Buttons
 header-secondary-button:
@@ -153,8 +153,8 @@ features:
   description: Easily add support for yours!
   icon: pe-7s-smile
 
-- title: Battle proven
-  description: Running inside custom controllers for world-class musicians.
+- title: BLE MIDI
+  description: Bluetooth Low Energy MIDI available on selected boards.
   icon: pe-7s-smile
 
 - title: Inputs
@@ -354,63 +354,79 @@ boards:
 - title: Nordic Semiconductor nRF52840DK
   image: nRF52840_dk.jpg
 
-#####################################
-##########  Core Features  ##########
-#####################################
-core-title: Official board specifications
-core-description: Loaded with I/O in compact form. 10cm x 10cm. Small, medium or large size project, OpenDeck board has you covered.
+core-title-od2: OpenDeck board v2 specifications
+core-description-od2: Loaded with I/O in compact form. 10cm x 10cm. Small, medium or large size project, OpenDeck board has you covered.
 
-#
-# Core Features Left
-#
-core-features-left:
-
-# Feature
+core-features-left-od2:
 - name: Digital inputs
   description: 64 inputs for buttons or 32 for encoders
   icon: pe-7s-power
 
-# Feature
 - name: Outputs
   description: 48 single color-LEDs or 16 RGB LEDs
   icon: pe-7s-light
 
-# Feature
 - name: DMX output
   description: Open Lighting Architecture compatible
   icon: pe-7s-network
 
-# Feature
 - name: UART
   description: Support for any Nextion and Stone HMI screen
   icon: pe-7s-crop
 
-#
-# Core Features Right
-#
-core-features-right:
-
-# Feature
+core-features-right-od2:
 - name: Analog inputs
   description: 32 inputs with support for buttons
   icon: pe-7s-edit
 
-# Feature
 - name: USB MIDI
   description: Class compliant. No drivers required.
   icon: pe-7s-usb
 
-# Feature
 - name: DIN MIDI
   description: In and out
   icon: pe-7s-musiclist
 
-# Feature
 - name: I2C for OLED display
   description: SSD1306 controller support
   icon: pe-7s-monitor
 
+core-title-od3: OpenDeck board v3 specifications
+core-description-od3: For that extra push over the cliff. Now with Bluetooth support.
 
+core-features-left-od3:
+- name: Digital inputs
+  description: 128 inputs for buttons or 64 for encoders
+  icon: pe-7s-power
+
+- name: Outputs
+  description: 64 single color-LEDs or 21 RGB LEDs
+  icon: pe-7s-light
+
+- name: DMX output
+  description: Open Lighting Architecture compatible
+  icon: pe-7s-network
+
+- name: UART
+  description: Support for any Nextion and Stone HMI screen
+  icon: pe-7s-crop
+
+core-features-right-od3:
+- name: Analog inputs
+  description: 64 inputs with support for buttons
+  icon: pe-7s-edit
+
+- name: USB MIDI
+  description: Class compliant. No drivers required.
+  icon: pe-7s-usb
+
+- name: DIN MIDI
+  description: In and out
+  icon: pe-7s-musiclist
+
+- name: I2C for OLED display
+  description: SSD1306 controller support
+  icon: pe-7s-monitor
 
 
 #####################################
