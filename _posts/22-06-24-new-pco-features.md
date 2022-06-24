@@ -41,7 +41,7 @@ The pattern is simpler than it might seem; when pressing a _Program Change_ butt
 
 With some thoughtful organisation of your presets in AmpliTube, loading the one you want at specific moments in your performance should only take a few presses of the foot switches. Personally, I like arranging the presets so that I don't have to press the _Program Change Offset_ buttons during any given song. (This results in some empty or duplicate AmpliTube presets in come cases, but I prefer the simplicity.)
 
-But Wait, There's More!
+## But Wait, There's More!
 
 Remember how I said that AmpliTube also supports CC messages to control individual parameters like virtual effect pedal bypass? The v0.1 controller above is only useful for changing presets, but not for sending CC messages. Let's look at v0.2 of the controller:
 ![]({{ site.baseurl }}/images/blog/new-pc-features/02.png)
