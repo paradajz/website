@@ -400,7 +400,7 @@ core-features-left-od3:
   icon: pe-7s-power
 
 - name: Outputs
-  description: 64 single color-LEDs or 21 RGB LEDs
+  description: 64 single color-LEDs or 16 RGB LEDs
   icon: pe-7s-light
 
 - name: DMX output
