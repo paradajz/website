@@ -178,8 +178,8 @@ features:
   description: No drivers required
   icon: pe-7s-smile
 
-- title: DMX
-  description: DMX output supported (with additional circuitry)
+- title: MIDI configuration
+  description: Configurable MIDI channels and messages
   icon: pe-7s-smile
 
 - title: Presets
@@ -367,10 +367,6 @@ core-features-left-od2:
   description: 48 single color-LEDs or 16 RGB LEDs
   icon: pe-7s-light
 
-- name: DMX output
-  description: Open Lighting Architecture compatible
-  icon: pe-7s-network
-
 - name: UART
   description: Support for any Nextion and Stone HMI screen
   icon: pe-7s-crop
@@ -403,10 +399,6 @@ core-features-left-od3:
 - name: Outputs
   description: 64 single color-LEDs or 16 RGB LEDs
   icon: pe-7s-light
-
-- name: DMX output
-  description: Open Lighting Architecture compatible
-  icon: pe-7s-network
 
 - name: UART
   description: Support for any Nextion and Stone HMI screen
