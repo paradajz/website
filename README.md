@@ -20,13 +20,13 @@ Based on [Sera theme](https://themeforest.net/item/sera-onepage-multipurpose-jek
 This will give you file watching, browser synchronisation, auto-rebuild, CSS injecting etc (run in repository root):
 
 ```shell
-$ bundle exec gulp
+$ make dev
 ```
 
 ## Build for production
 
 ```shell
-$ bundle exec prod
+$ make prod
 ```
 
 Production files will be located in `_site/deploy`.

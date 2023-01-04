@@ -13,5 +13,5 @@
     "workspaceMount": "type=bind,src=${localWorkspaceFolder},dst=/home/shanteacontrols/${localWorkspaceFolderBasename}",
     "workspaceFolder": "/home/shanteacontrols/${localWorkspaceFolderBasename}",
 
-    "postCreateCommand": "bundle install && npm install -g gulp && npm install"
+    "postCreateCommand": "make install"
 }

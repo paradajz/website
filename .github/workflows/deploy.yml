@@ -31,7 +31,7 @@ jobs:
           bundle install
           npm install -g gulp
           npm install
-          bundle exec gulp prod
+          make prod
           git checkout gh-pages
           cp -R _site/deploy/* .
           git add .
