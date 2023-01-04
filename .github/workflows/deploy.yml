@@ -6,31 +6,28 @@ on:
       - master
 
 jobs:
-  build:
+  deploy:
     name: Deploy
     runs-on: ubuntu-22.04
+    container:
+      image: paradajz168/website-dev:latest
+      options: --user root
     steps:
+      - name: Mark repository as safe
+        run: git config --global --add safe.directory /__w/website/website
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - name: Deploy
         run: |
           git config --global user.name "web_bot"
           git config --global user.email "2544094+web_bot@users.noreply.github.com"
-          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-          export GEM_HOME=$HOME/.gem
-          export GEM_PATH=$HOME/.gem
-          export NVM_DIR="$HOME/.nvm"
-          export PATH="$HOME/.gem/bin:$PATH"
+          export GEM_HOME=/home/shanteacontrols/gems
+          export NVM_DIR=/home/shanteacontrols/.nvm
+          export PATH="/home/shanteacontrols/gems/bin:$PATH"
           [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-          [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-          nvm install 16.13.2
-          gem install jekyll
-          gem install bundler
-          bundle install
-          npm install -g gulp
-          npm install
+          make install
           make prod
           git checkout gh-pages
           cp -R _site/deploy/* .
