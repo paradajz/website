@@ -109,4 +109,4 @@ New build system which allows defining of custom board variants is also part of 
 
 Lastly, I want to talk about new boards. Some really good news here - new boards are in production as I type this post! The OpenDeck v2 board features STM32F405 MCU, has support for 10 presets, has support for touchscreens, OLED displays and also the ability to work with I2C and SPI sensors in the future (there are connectors present on board) and other than that, it has same amount of I/O as the v1 board. Dimensions are the same, as well as the pinouts - with one change regarding the analog inputs - there are now both ground and power supply pins for each of 32 analog inputs.
 
-New boards will be available on [Tindie](https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform/) in few weeks at the same price as old board.
+New boards will be available on [Tindie](https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform-m/) in few weeks at the same price as old board.

@@ -35,7 +35,7 @@ The only major thing in this version is the fix for incorrect handling of RGB LE
 
 ## The official boards
 
-I'm happy to say that the new batch of OpenDeck boards has finally arrived and you can order yours right now on [Tindie](https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform/).
+I'm happy to say that the new batch of OpenDeck boards has finally arrived and you can order yours right now on [Tindie](https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform-m/).
 
 ## Bonus
 

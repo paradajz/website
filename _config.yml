@@ -96,7 +96,7 @@ blog-desc: Shantea Controls Blog
 # Focus Buttons
 header-focus-button:
   title: Buy now
-  url: https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform-v3/
+  url: https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform-l/
 
 # Secondary Buttons
 header-secondary-button:
@@ -355,7 +355,7 @@ boards:
 - title: Nordic Semiconductor nRF52840DK
   image: nRF52840_dk.jpg
 
-core-title-od2: OpenDeck board v2 specifications
+core-title-od2: OpenDeck M board specifications
 core-description-od2: Loaded with I/O in compact form. 10cm x 10cm. Small, medium or large size project, OpenDeck board has you covered.
 
 core-features-left-od2:
@@ -388,7 +388,7 @@ core-features-right-od2:
   description: SSD1306 controller support
   icon: pe-7s-monitor
 
-core-title-od3: OpenDeck board v3 specifications
+core-title-od3: OpenDeck L board specifications
 core-description-od3: For that extra push over the cliff. Now with Bluetooth support.
 
 core-features-left-od3:
@@ -439,17 +439,17 @@ testimonials:
   cite: "(...) the most affordable and flexible platform for building your own custom MIDI controllers."
 
 - name: Steve
-  url: https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform/
+  url: https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform-m/
   url-text: Tindie review
   cite: "The new interface is a triumph of usability and make configuring the controllers very easy indeed. In my opinion, this is the best MIDI controller available"
 
 - name: Manuel
-  url: https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform/
+  url: https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform-m/
   url-text: Tindie review
   cite: "It's the pointy, finished and perfect board for all your DIY MIDI"
 
 - name: Ben Garland
-  url: https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform/
+  url: https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform-m/
   url-text: Tindie review
   cite: "OpenDeck makes me excited for MIDI controllers like never before. It takes just a few MINUTES to get up and running with OpenDeck! It's literally plug and PLAY!"
 

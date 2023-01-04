@@ -9,7 +9,7 @@ image: "od3/5.png"
 comments: true
 ---
 
-The wait is over - new boards are available now on [Tindie](https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform-v3/)!
+The wait is over - new boards are available now on [Tindie](https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform-l/)!
 
 To recap, here are the features:
 

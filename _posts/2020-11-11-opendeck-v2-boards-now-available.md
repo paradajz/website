@@ -8,7 +8,7 @@ tags:
 comments: true
 ---
 
-This might be the shortest post I've ever written - but fairly important nonetheless. The OpenDeck v2 boards can now be ordered via [Tindie](https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform/)! As an reminder, OpenDeck v2 boards bring the the following:
+This might be the shortest post I've ever written - but fairly important nonetheless. The OpenDeck v2 boards can now be ordered via [Tindie](https://www.tindie.com/products/paradajz/opendeck-diy-midi-platform-m/)! As an reminder, OpenDeck v2 boards bring the the following:
 
 - 64 digital inputs for 64 buttons or 32 encoders
 - 32 analog inputs which can be used as button inputs as well
