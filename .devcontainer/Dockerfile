@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 ARG USER=shanteacontrols
 ARG NODE_VERSION=16.13.2
