@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  shanteacontrols-website:
+    container_name: shanteacontrols-website
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - $PWD:/home/shanteacontrols/website
+      - $HOME/.ssh:/home/shanteacontrols/.ssh
+    hostname: localhost
+    network_mode: host
+    working_dir: /home/shanteacontrols/website
+    command: tail -f /dev/null

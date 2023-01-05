@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  shanteacontrols-website:
+    container_name: shanteacontrols-website
+    image: paradajz168/website-dev
+    volumes:
+      - $PWD:/home/shanteacontrols/website
+      - $HOME/.ssh:/home/shanteacontrols/.ssh
+    working_dir: /home/shanteacontrols/website
+    command: tail -f /dev/null
