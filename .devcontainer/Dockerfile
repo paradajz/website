@@ -1,9 +1,7 @@
 FROM ubuntu:22.04
 
 ARG USER=shanteacontrols
-ARG NODE_VERSION=16.13.2
-ENV GEM_HOME /home/$USER/gems
-ENV NVM_DIR /home/$USER/.nvm
+ARG ENV_FILE=/home/$USER/.env_setup
 
 RUN \
 apt-get update && \
@@ -13,31 +11,51 @@ git \
 ca-certificates \
 ruby-full \
 build-essential \
+sudo \
 zlib1g-dev
 
-#don't run as root!
+# Don't run as root!
 RUN adduser --disabled-password --gecos '' $USER
 
-#add user to sudo group
+# Add user to sudo group
 RUN adduser $USER sudo
 
-#disable password prompt for sudo commands
+# Disable password prompt for sudo commands
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
-#run everything below as $USER
+# Run everything below as $USER
 USER $USER
 WORKDIR /home/$USER
 
-#setup gem install directory
 RUN \
-echo 'export GEM_HOME="$GEM_HOME"' >> ~/.bashrc && \
-echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+echo "#!/bin/bash" >> $ENV_FILE && \
+echo "export GEM_HOME=/home/$USER/gems" >> $ENV_FILE && \
+echo "export GEM_PATH=/home/$USER/gems" >> $ENV_FILE && \
+echo "export NVM_DIR=/home/$USER/.nvm" >> $ENV_FILE && \
+echo "export PATH=\"/home/$USER/gems/bin:$PATH\"" >> $ENV_FILE && \
+echo '[ -s $NVM_DIR/nvm.sh ] && \. $NVM_DIR/nvm.sh || true' >> $ENV_FILE
 
-RUN gem install jekyll bundler
+# Temporarily add Makefile, Gemfile and NPM package files so that installation is done during
+# the container build phase.
+ADD \
+Makefile \
+Gemfile \
+Gemfile.lock \
+package.json \
+package-lock.json \
+/home/$USER
 
 RUN \
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash && \
-. $NVM_DIR/nvm.sh && \
-nvm install $NODE_VERSION
+sudo chown $USER:$USER \
+/home/$USER/package.json \
+/home/$USER/package-lock.json \
+&& \
+make install && \
+rm \
+/home/$USER/Makefile \
+/home/$USER/Gemfile \
+/home/$USER/Gemfile.lock \
+/home/$USER/package.json \
+/home/$USER/package-lock.json
 
 EXPOSE 3000

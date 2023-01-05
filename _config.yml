@@ -4,7 +4,7 @@
 #
 
 # Information for compile
-exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "README.md", "vendor"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "Gemfile", "README.md", "vendor", "gems"]
 keep_files: ["css", "images"]
 
 #

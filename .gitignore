@@ -3,3 +3,6 @@ vendor/*
 _site/*
 .jekyll-cache/*
 css/style.css
+.env_setup
+gems/*
+.nvm/*

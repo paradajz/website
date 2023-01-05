@@ -23,11 +23,6 @@ jobs:
         run: |
           git config --global user.name "web_bot"
           git config --global user.email "2544094+web_bot@users.noreply.github.com"
-          export GEM_HOME=/home/shanteacontrols/gems
-          export NVM_DIR=/home/shanteacontrols/.nvm
-          export PATH="/home/shanteacontrols/gems/bin:$PATH"
-          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-          make install
           make prod
           git checkout gh-pages
           cp -R _site/deploy/* .
