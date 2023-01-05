@@ -3,6 +3,8 @@ ROOT_DIR     := /home/shanteacontrols
 ENV_FILE     := $(ROOT_DIR)/.env_setup
 NODE_VERSION := 16.13.2
 
+# node_modules directory is created during container build in ROOT_DIR
+# npm expects it to be present in the current directory, so just copy it
 node_modules:
 	@cp -R $(ROOT_DIR)/node_modules node_modules/
 
