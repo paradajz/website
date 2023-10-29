@@ -7,9 +7,8 @@ services:
       context: .
       dockerfile: .devcontainer/Dockerfile
     volumes:
-      - $PWD:/home/shanteacontrols/website
-      - $HOME/.ssh:/home/shanteacontrols/.ssh
+      - $PWD:/home/ubuntu/website
+      - $HOME/.ssh:/home/ubuntu/.ssh
     hostname: localhost
-    network_mode: host
-    working_dir: /home/shanteacontrols/website
+    working_dir: /home/ubuntu/website
     command: tail -f /dev/null

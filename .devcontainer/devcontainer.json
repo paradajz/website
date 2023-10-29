@@ -1,7 +1,19 @@
 {
-  "name": "ShanteaControlsWebsite",
-  "dockerComposeFile": ["../docker-compose.yml"],
+  "name": "Shantea Controls Website",
+  "dockerComposeFile": [
+      "../docker-compose-build.yml"
+  ],
   "service": "shanteacontrols-website",
-  "workspaceFolder": "/home/shanteacontrols/${localWorkspaceFolderBasename}",
-  "extensions": ["eamodio.gitlens", "timonwong.shellcheck"]
+  "workspaceFolder": "/home/ubuntu/website",
+  "customizations": {
+      "vscode": {
+          "extensions": [
+              "ms-vscode.cpptools",
+              "llvm-vs-code-extensions.vscode-clangd",
+              "eamodio.gitlens",
+              "xaver.clang-format",
+              "timonwong.shellcheck"
+          ]
+      }
+  }
 }
