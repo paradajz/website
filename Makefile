@@ -1,7 +1,9 @@
 SHELL        := /bin/bash
-ROOT_DIR     := /home/shanteacontrols
+ROOT_DIR     := /home/ubuntu
 ENV_FILE     := $(ROOT_DIR)/.env_setup
 NODE_VERSION := 16.13.2
+
+.DEFAULT_GOAL := dev
 
 # node_modules directory is created during container build in ROOT_DIR
 # npm expects it to be present in the current directory, so just copy it
