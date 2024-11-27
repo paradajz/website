@@ -1,19 +1,38 @@
 {
-  "name": "Shantea Controls Website",
-  "dockerComposeFile": [
-      "../docker-compose-build.yml"
-  ],
-  "service": "shanteacontrols-website",
-  "workspaceFolder": "/home/ubuntu/website",
-  "customizations": {
-      "vscode": {
-          "extensions": [
-              "ms-vscode.cpptools",
-              "llvm-vs-code-extensions.vscode-clangd",
-              "eamodio.gitlens",
-              "xaver.clang-format",
-              "timonwong.shellcheck"
-          ]
-      }
-  }
+    "name": "${localWorkspaceFolderBasename}",
+    "build": {
+        "dockerfile": "Dockerfile.ghcr",
+        "context": "${localWorkspaceFolder}"
+    },
+    "workspaceMount": "src=${localWorkspaceFolder},dst=/home/ubuntu/project,type=bind",
+    "workspaceFolder": "/home/ubuntu/project",
+    "mounts": [
+        {
+            "source": "${localEnv:HOME}/.gitconfig",
+            "target": "/etc/gitconfig",
+            "type": "bind"
+        },
+        {
+            "source": "${localEnv:HOME}/.ssh",
+            "target": "/home/ubuntu/.ssh",
+            "type": "bind"
+        }
+    ],
+    "runArgs": [
+        "--network=host",
+        "--hostname=${localWorkspaceFolderBasename}"
+    ],
+    "containerUser": "ubuntu",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "llvm-vs-code-extensions.vscode-clangd",
+                "eamodio.gitlens",
+                "xaver.clang-format",
+                "timonwong.shellcheck"
+            ]
+        }
+    },
+    "postStartCommand": "/home/ubuntu/project/scripts/cleanup.sh"
 }

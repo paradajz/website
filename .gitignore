@@ -6,3 +6,4 @@ css/style.css
 .env_setup
 gems/*
 .nvm/*
+.installed
