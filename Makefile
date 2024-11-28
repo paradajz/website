@@ -5,13 +5,17 @@ INSTALL_INDICATOR := .installed
 
 .DEFAULT_GOAL := dev
 
-$(INSTALL_INDICATOR):
+$(INSTALL_INDICATOR): package.json Gemfile
 	@source $(ENV_FILE) && \
-	gem install jekyll bundler && \
+	gem install \
+	jekyll \
+	bundler && \
 	bundle install && \
 	npm install -g gulp && \
 	npm install
 	@touch .installed
+
+install: $(INSTALL_INDICATOR)
 
 dev: $(INSTALL_INDICATOR)
 	@source $(ENV_FILE) && \
@@ -21,4 +25,4 @@ prod: $(INSTALL_INDICATOR)
 	@source $(ENV_FILE) && \
 	bundle exec gulp prod
 
-.PHONY: dev prod
+.PHONY: install dev prod
